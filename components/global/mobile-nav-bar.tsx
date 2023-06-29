@@ -41,7 +41,7 @@ export const MobileNavBar = () => {
   ];
 
   return (
-    <header className={classNames("fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px] md:hidden",
+    <header className={classNames("fixed top-0 left-0 z-50 w-full border-b border-transparent-white backdrop-blur-[12px] md:hidden",
       hamburgerMenuIsOpen ? "h-screen transition-[visibility] delay-500" : ''
     )}>
     <Container className="flex px-4 h-navigation-height">

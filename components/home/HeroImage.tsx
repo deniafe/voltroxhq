@@ -55,12 +55,12 @@ export const HeroImage = () => {
 
   return (
     // <Section>
-      <div id="hero-image" ref={ref} className="md:mt-[16rem] mx-[1rem] md:mt-[6rem] md:mx-[12rem] [perspective:2000px] w-screen">
-        <div className="text-center mb-[6rem] md:mb-[8rem]">
+      <div id="hero-image" ref={ref} className="mx-[1rem] md:mt-[6rem] md:mx-[12rem] [perspective:2000px] w-screen">
+        <div className="text-center mx-[2rem] md:mx-auto mb-[8rem] md:mb-[8rem]">
           <h2 className="mb-4 text-4xl md:mb-7 md:text-7xl">
             Who We Are 
           </h2>
-          <p className="mx-auto mb-2 max-w-[80rem] text-lg text-primary-text md:mb-7 md:text-xl">
+          <p className="mx-auto max-w-[80rem] text-lg text-primary-text md:mb-7 md:text-xl">
           Voltrox is a leading software development agency dedicated to providing tailored solutions for businesses. With a team of skilled professionals, we specialize in crafting innovative software applications and mobile apps.
           </p>
         </div>

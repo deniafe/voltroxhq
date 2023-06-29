@@ -9,6 +9,9 @@ import {
   IssuesIcon,
   ParentSubIcon,
   WorkflowsIcon,
+  AssignToIcon,
+  AddLabels,
+  BacklogIcon
 } from "../global/icons/features";
 
 export const EnjoyIssueTracking = () => {
@@ -57,6 +60,21 @@ export const EnjoyIssueTracking = () => {
               icon: IssuesIcon,
               title: "UI/UX Design",
               text: "We focus on delivering exceptional user experiences through intuitive and visually appealing user interfaces.",
+            },
+            {
+              icon: AssignToIcon,
+              title: "Branding Services.",
+              text: "We work closely with our clients to capture their vision and values, ensuring that the branding reflects their unique identity and resonates with their target audience.",
+            },
+            {
+              icon: AddLabels,
+              title: "3D Modeling and Animation",
+              text: " Whether you need product visualizations, architectural renderings, character modeling, or interactive 3D experiences, we can bring your ideas to life.",
+            },
+            {
+              icon: BacklogIcon,
+              title: "Digital Marketing Services",
+              text: " offers a comprehensive range of digital marketing services to help businesses establish a strong online presence, increase brand visibility, and drive targeted traffic to their websites.",
             },
           ]}
         />

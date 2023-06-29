@@ -18,234 +18,71 @@ import { HeroImage } from "./HeroImage";
 export const Tools = () => (
   <>
     <Section>
-      <p className="mb-[12rem] mt-[12rem] text-center text-xl text-white md:text-4xl">
+      <p className="mt-[12rem] mb-[8rem] text-center text-xl text-white md:mb-[12rem] md:text-4xl">
         <span className="text-primary-text">
           Technologies we use to power your apps.
         </span>
         <br className="hidden md:block" /> From next-gen startups to established enterprises.
       </p>
 
-      <div className="flex justify-around mb-12 mt-12 flex-wrap">
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key="html5"
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{
-              duration: 5, // Adjust the duration for a slower animation
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 1,
-              ease: "linear",
-            }}
-            className="logo"
-          >
-            <HTML5Logo />
-          </motion.div>
-        </AnimatePresence>
-        {/* Include other logos with the same animation configuration */}
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key="css3"
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{
-              duration: 5, // Adjust the duration for a slower animation
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 0.1,
-              ease: "linear",
-            }}
-            className="logo"
-          >
-            <CSS3Logo />
-          </motion.div>
-        </AnimatePresence>
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key="figma"
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{
-              duration: 5, // Adjust the duration for a slower animation
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 0.1,
-              ease: "linear",
-            }}
-            className="logo"
-          >
-            <FigmaLogo />
-          </motion.div>
-        </AnimatePresence>
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key="javascript"
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{
-              duration: 5, // Adjust the duration for a slower animation
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 0.1,
-              ease: "linear",
-            }}
-            className="logo"
-          >
-            <JavascriptLogo />
-          </motion.div>
-        </AnimatePresence>
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key="typescript"
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{
-              duration: 5, // Adjust the duration for a slower animation
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 0.1,
-              ease: "linear",
-            }}
-            className="logo"
-          >
-            <TypescriptLogo />
-          </motion.div>
-        </AnimatePresence>
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key="react"
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{
-              duration: 5, // Adjust the duration for a slower animation
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 0.1,
-              ease: "linear",
-            }}
-            className="logo"
-          >
-            <ReactLogo />
-          </motion.div>
-        </AnimatePresence>
+      <div className="flex justify-around  mb-[4rem] md:mb-[8rem]">
+        <motion.div
+          className="animate-slide-left" // Tailwind CSS animation class
+        >
+          <HTML5Logo />
+        </motion.div>
+        {/* Include other logos with the same animation class */}
+        <motion.div
+          className="animate-slide-left"
+        >
+          <CSS3Logo />
+        </motion.div>
+        <motion.div
+          className="animate-slide-left"
+        >
+           <FigmaLogo />
+        </motion.div>
+        <motion.div
+          className="animate-slide-left"
+        >
+          <JavascriptLogo />
+        </motion.div>
+        <motion.div
+          className="animate-slide-left"
+        >
+          <TypescriptLogo />
+        </motion.div>
+        <motion.div
+          className="animate-slide-left"
+        >
+          <ReactLogo />
+        </motion.div>
       </div>
 
       <div className="flex justify-around">
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key="angular"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 100 }}
-            transition={{
-              duration: 5, // Adjust the duration for a slower animation
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 0.1,
-              ease: "linear",
-            }}
-          >
-            <AngularLogo />
-          </motion.div>
-        </AnimatePresence>
-        {/* Include other logos with the same animation configuration */}
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key="java"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 100 }}
-            transition={{
-              duration: 5, // Adjust the duration for a slower animation
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 0.1,
-              ease: "linear",
-            }}
-          >
-            <JavaLogo />
-          </motion.div>
-        </AnimatePresence>
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key="python"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 100 }}
-            transition={{
-              duration: 5, // Adjust the duration for a slower animation
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 0.1,
-              ease: "linear",
-            }}
-          >
-            <PythonLogo />
-          </motion.div>
-        </AnimatePresence>
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key="c"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 100 }}
-            transition={{
-              duration: 5, // Adjust the duration for a slower animation
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 0.1,
-              ease: "linear",
-            }}
-          >
-            <CLogo />
-          </motion.div>
-        </AnimatePresence>
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key="flutter"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 100 }}
-            transition={{
-              duration: 5, // Adjust the duration for a slower animation
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 0.1,
-              ease: "linear",
-            }}
-          >
-            <FlutterLogo />
-          </motion.div>
-        </AnimatePresence>
-        <AnimatePresence mode='wait'>
-          <motion.div
-            key="postgresql"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 100 }}
-            transition={{
-              duration: 5, // Adjust the duration for a slower animation
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 0.1,
-              ease: "linear",
-            }}
-          >
-            <PostgresqlLogo />
-          </motion.div>
-        </AnimatePresence>
+        <motion.div className="animate-slide-right">
+          <AngularLogo />
+        </motion.div>
+        {/* Include other logos with the same animation class */}
+        <motion.div className="animate-slide-right">
+          <JavaLogo />
+        </motion.div>
+        <motion.div className="animate-slide-right">
+          <PythonLogo />
+        </motion.div>
+        <motion.div className="animate-slide-right">
+          <CLogo />
+        </motion.div>
+        <motion.div className="animate-slide-right">
+          <FlutterLogo />
+        </motion.div>
+        <motion.div className="animate-slide-right">
+          <PostgresqlLogo />
+        </motion.div>
       </div>
-      {/* <div className="md:hidden">
-        <HeroImage />
-      </div> */}
+
       
     </Section>
   </>
 );
+

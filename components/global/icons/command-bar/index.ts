@@ -1,5 +1,5 @@
-export * from "./add-labels";
-export * from "./assign-to";
+export * from "../features/add-labels";
+export * from "../features/assign-to";
 export * from "./backlog";
 export * from "./change-priority";
 export * from "./change-status";

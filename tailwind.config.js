@@ -29,7 +29,7 @@ module.exports = {
     },
     colors: {
       primary: "#5CE4CF",
-      "primary-button": "#45ab9c",
+      "primary-button": "#62d5c4",
       transparent: "transparent",
       white: "#fff",
       red: "red",
@@ -66,6 +66,8 @@ module.exports = {
         "linear-gradient(92.88deg, rgba(84, 203, 184) 9.16%, rgb(87, 221, 200) 43.89%, rgba(84, 203, 184) 64.72%)",
       "page-gradient":
         "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), transparent)",
+      "contact-gradient":
+        "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), 100%)",
       "hero-gradient":
         "radial-gradient(ellipse 50% 80% at 20% 40%,rgba(93,52,221,0.1),transparent), radial-gradient(ellipse 50% 80% at 80% 50%,rgba(120,119,198,0.15),transparent)",
       "hero-glow":

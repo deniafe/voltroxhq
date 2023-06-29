@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import classNames from "classnames";
 
 export const Navbar = () => {
   const navLinks = [
@@ -32,18 +33,26 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav
+      <nav 
         id="navbar"
-        className={`fixed top-0 left-0 w-full flex justify-between items-center px-8 py-4 z-50 font-mono text-white delay-500 invisible transition-[visibility] md:visible`}
+        style={isLogoVisible ? { background: 'transparent'} : { background: 'rgb(255, 255, 255, 0.07)' }}
+        className={classNames(`fixed top-0 left-0 w-full flex justify-between items-center px-8 z-50 font-mono`, 
+        `text-white delay-500 invisible transition-[visibility] md:visible bg-white`,
+        `${isLogoVisible ? 'py-4' : 'py-0 backdrop-filter backdrop-blur-lg'} `
+        )}
       >
         <div className={`text-white text-2xl font-bold text-shadow-md flex-2 w-40 transition-[visibility] ${
-          isLogoVisible ? "visible" : "delay-500 invisible"
+          isLogoVisible ? "visible" : "visible"
         }`}>
           <Link href="/">
             <Image src="/logo.png" alt="Logo" height={20} width={100} />
           </Link>
         </div>
-        <div className="flex flex-3 justify-center bg-opacity-7 rounded backdrop-filter backdrop-blur-lg pl-4" style={{ background: 'rgb(255, 255, 255, 0.07)' }}>
+        <div className={classNames("flex flex-3 justify-center bg-opacity-7 rounded pl-4",
+        `${isLogoVisible ? 'backdrop-filter backdrop-blur-lg' : ''} `
+        )}
+        style={isLogoVisible ? { background: 'rgb(255, 255, 255, 0.07)' } : { background: 'transparent'}}
+        >
           {navLinks.map((link, index) => (
             <div
               key={index}

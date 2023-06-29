@@ -1,21 +1,13 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Canvas } from "@react-three/fiber";
-// import { Background } from "../components/global/Background";
-import { Bg } from "../components/global/Bg";
-import { Scroll, ScrollControls } from "@react-three/drei";
-// import { Interface } from "./components/Interface";
-// import { ScrollManager } from "./components/ScrollManager";
-import { Navbar } from "../components/global/Navbar";
-import { useEffect, useState } from "react";
-// import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import { Suspense, useState } from 'react';
+
+import { LoadingScreen } from '@/components/home/LoadingScreen';
 import MainLayout from '@/components/global/MainLayout';
 import { Interface } from '@/components/home/Interface';
 
-// const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
+  const [start, setStart] = useState(false);
+
   return (
     <>
       <Head>
@@ -24,9 +16,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.jpeg" />
       </Head>
-      <MainLayout>
-        <Interface />
-      </MainLayout>
+      <Suspense fallback={null}>{start ? 
+        (
+          <MainLayout>
+            <Interface />
+          </MainLayout>
+        ) : (
+          <>
+            <LoadingScreen started={start} onStarted={() => setStart(true)} />
+        </>
+        )
+      }</Suspense>
+      
     </>
   )
 }

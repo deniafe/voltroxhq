@@ -4,3 +4,6 @@ export * from "./discussion";
 export * from "./issues";
 export * from "./parent-sub";
 export * from "./workflows";
+export * from "./assign-to"
+export * from "./add-labels"
+export * from "./backlog"

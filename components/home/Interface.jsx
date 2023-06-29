@@ -1,22 +1,20 @@
-import { Section } from '@/components/global/Section'
-import { StarsIllustration } from "@/components/global/icons/stars";
-import { Container } from '../global/container';
+import { StarsIllustration } from "@/components/global/icons/stars"
 import { Hero } from './Hero'
 import { HeroImage } from './HeroImage'
 import { CodeTyping } from './CodeTyping'
-import { EnjoyIssueTracking } from './enjoy-issue-tracking'
-import { Tools } from './Tools';
+import { EnjoyIssueTracking } from './enjoy-issue-tracking' 
+import { Tools } from './Tools'
+import { StarsCanvas } from './Stars'
+import { Contact } from './Contact'
+import { Section } from "../global/Section"
 import classNames from "classnames"
-import { CommandMenu } from "../global/command-menu";
 
 export const Interface = () => {
   return (
     <div className={`flex flex-col items-center w-screen bg-page-gradient`}>
       <Hero />
       <Tools />
-      {/* <div className="hidden md:block"> */}
         <HeroImage />
-      {/* </div> */}
       
         <div
           className={classNames(
@@ -31,14 +29,15 @@ export const Interface = () => {
       <CodeTyping />
 
       <EnjoyIssueTracking />
-      {/* <BuildMomentum />
-      <SetDirection /> */}
-      {/* <Section>
-        <h1>Projects</h1>
-      </Section> */}
-      {/* <ContactSection />
-      <SkillsSection />
-      <ContactSection /> */}
+      <div className='relative z-10 w-screen'>
+        <StarsCanvas />
+        <div className="absolute top-1">
+          <Contact />
+        </div>
+          {/* <Contact /> */}
+          {/* <StarsCanvas /> */}
+        </div>
+      
     </div>
   )
 }
