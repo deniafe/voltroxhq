@@ -1,11 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Canvas } from '@react-three/fiber';
+import classNames from "classnames";
+
 import { Section } from '@/components/global/Section'
 import { Button } from '@/components/global/button'
 import { AquaKeyboard } from './AquaKeyboard'
 
 export const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isIPhone, setIsIPhone] = useState(false);
 
   useEffect(() => {
     // Add a listener for changes to the screen size
@@ -26,6 +29,16 @@ export const Hero = () => {
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
+  }, []);
+
+  useEffect(() => {
+    const isIPhone = /iPhone/i.test(navigator.userAgent);
+    // Add logic specific to iPhone devices
+    if (isIPhone) {
+      // Perform actions for iPhone devices
+      console.log('You are on an iPhone device');
+      setIsIPhone(isIPhone)
+    }
   }, []);
 
   return (
@@ -59,8 +72,10 @@ export const Hero = () => {
           {/* <Button>Contact Us</Button> */}
         </div>
           
-        <div className="flex flex-col flex-1 pl-[2rem] md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto">
-          <Canvas camera={{ position: [0, 0, isMobile ? 10 : 0] }}>
+        <div className={classNames("flex flex-col flex-1 pl-[2rem] md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto",
+        `${isIPhone ? 'mt-[-4rem] mb-[12rem]' : ''}`
+        )}>
+          <Canvas camera={{ position: [0, 0, isMobile ? 6 : 6] }}>
             <ambientLight intensity={1} />
               <AquaKeyboard />
           </Canvas>
