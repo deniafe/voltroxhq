@@ -59,10 +59,10 @@ export const Hero = () => {
           {/* <Button>Contact Us</Button> */}
         </div>
           
-        <div className="flex flex-col flex-1 pl-[8rem] md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto">
+        <div className="flex flex-col flex-1 pl-[2rem] md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto">
         <Canvas>
             <ambientLight intensity={1} />
-            <group position={[0, 0, isMobile ? -2 : 0]} scale={isMobile ? 1 : 1}>
+            <group position={[0, 0, isMobile ? 0 : 0]} scale={isMobile ? 1 : 1}>
               {/* Adjust the position and scale values as per your needs */}
               <AquaKeyboard />
             </group>
