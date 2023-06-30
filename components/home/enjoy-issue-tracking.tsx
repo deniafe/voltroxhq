@@ -16,7 +16,7 @@ import {
 
 export const EnjoyIssueTracking = () => {
   return (
-    <div className="w-screen mt-[16rem] mx-auto">
+    <div className="w-screen mt-[16rem] md:mt-[16rem] mx-auto">
       <Features color="194,97,254" colorDark="53,42,79">
         <Features.Main
           title={

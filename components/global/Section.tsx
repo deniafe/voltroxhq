@@ -5,7 +5,7 @@ export const Section = (props: { children: React.ReactNode }) => {
   const { children } = props
 
   return <motion.section className={`
-  h-screen w-screen
+  md:h-screen w-screen
   `}
   initial={{
     opacity: 0,
