@@ -55,7 +55,7 @@ export const HeroImage = () => {
 
   return (
     // <Section>
-      <div id="hero-image" ref={ref} className="mx-[1rem] mb-[8rem] md:mb-0 md:mt-[6rem] md:mx-[12rem] [perspective:2000px] w-screen">
+      <div id="hero-image" ref={ref} className="px-[1rem] mb-[8rem] md:mb-0 md:mt-[6rem] md:px-[4rem] [perspective:2000px] w-screen">
         <div className="text-center mx-[2rem] md:mx-auto mb-[8rem] md:mb-[8rem]">
           <h2 className="mb-4 text-4xl md:mb-7 md:text-7xl">
             Who We Are 

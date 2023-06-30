@@ -98,7 +98,7 @@ export function AquaKeyboard(props) {
   
 
   return (
-  <group {...props} dispose={null} rotation={[Math.PI / 2.5, Math.PI / 6, - Math.PI / 24]} scale={isMobile ? [0.75, 0.8, 0.8] : [0.95, 1, 1]} position={isMobile ? [-1, -1, 0] :[-1, -1, 0]} >
+  <group {...props} dispose={null} rotation={[Math.PI / 2.5, Math.PI / 6, - Math.PI / 24]} scale={isMobile ? [0.95, 1, 1] : [0.95, 1, 1]} position={isMobile ? [-1, -1, 0] :[-1, -1, 0]} >
     <directionalLight position={[10, 30, -10]} color="#b7daed" intensity={0.7} />
     <pointLight position={[1.5, 4, 2]} color="purple" intensity={1} />
     <pointLight position={[-2, 2, -3]} color="#219fd5" intensity={0.5} />

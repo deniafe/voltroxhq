@@ -30,7 +30,7 @@ export const Hero = () => {
 
   return (
     <Section>
-      <div id="hero-section" className="flex pt-navigation-height md:pt-0 flex-col mb-[12rem] md:mb-[6rem] md:flex-row md:justify-center items-center h-screen">
+      <div id="hero-section" className="flex pt-navigation-height md:pt-0 flex-col md:mb-[6rem] md:flex-row md:justify-center items-center h-screen">
        <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1">
           <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">Welcome To Voltrox</h1>
           <div className="text-3xl md:text-5xl my-8">
@@ -59,10 +59,13 @@ export const Hero = () => {
           {/* <Button>Contact Us</Button> */}
         </div>
           
-        <div className="flex flex-col flex-1 ml-[8rem] md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto">
-          <Canvas>
+        <div className="flex flex-col flex-1 pl-[8rem] md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto">
+        <Canvas>
             <ambientLight intensity={1} />
-            <AquaKeyboard />
+            <group position={[0, 0, isMobile ? -2 : 0]} scale={isMobile ? 1 : 1}>
+              {/* Adjust the position and scale values as per your needs */}
+              <AquaKeyboard />
+            </group>
           </Canvas>
         </div>
       </div>

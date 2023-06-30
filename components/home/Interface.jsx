@@ -11,10 +11,10 @@ import classNames from "classnames"
 
 export const Interface = () => {
   return (
-    <div className={`flex flex-col items-center w-screen bg-page-gradient`}>
+    <div className={`bg-page-gradient`}>
       <Hero />
       <Tools />
-        <HeroImage />
+      <HeroImage />
       
         <div
           className={classNames(
@@ -34,8 +34,6 @@ export const Interface = () => {
         <div className="absolute top-1">
           <Contact />
         </div>
-          {/* <Contact /> */}
-          {/* <StarsCanvas /> */}
         </div>
       
     </div>

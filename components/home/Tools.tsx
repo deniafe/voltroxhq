@@ -19,7 +19,7 @@ export const Tools = () => (
   <>
     <Section>
       <div className="mt-[16rem] mb-[16rem] md:mb-0 md:mt-0">
-        <p className="mt-[12rem] mb-[8rem] text-center text-xl text-white md:mb-[12rem] md:text-4xl">
+        <p className="md:mt-[12rem] mb-[8rem] text-center text-xl text-white md:mb-[12rem] md:text-4xl">
           <span className="text-primary-text">
             Technologies we use to power your apps.
           </span>
