@@ -60,12 +60,9 @@ export const Hero = () => {
         </div>
           
         <div className="flex flex-col flex-1 pl-[2rem] md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto">
-        <Canvas>
+          <Canvas camera={{ position: [0, 0, isMobile ? 10 : 0] }}>
             <ambientLight intensity={1} />
-            <group position={[0, 0, isMobile ? 0 : 0]} scale={isMobile ? 1 : 1}>
-              {/* Adjust the position and scale values as per your needs */}
               <AquaKeyboard />
-            </group>
           </Canvas>
         </div>
       </div>
