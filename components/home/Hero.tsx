@@ -79,7 +79,7 @@ export const Hero = () => {
         `${isIPhone ? 'pt-[-14rem] pb-[20rem]' : ''}`,
          `${!isIPhone && isMobile ? 'pt-[4rem]' : ''}`
         )}>
-          <Canvas camera={{ position: [0, 0, isIPhone ? 7.5 : 4.9] }}>
+          <Canvas camera={{ position: [0, 0, isIPhone ? 7 : 4.9] }}>
             <ambientLight intensity={1} />
               <AquaKeyboard />
           </Canvas>
