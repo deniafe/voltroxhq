@@ -76,7 +76,7 @@ export const Hero = () => {
         </div>
           
         <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto",
-        `${isIPhone ? 'mt-[-4rem] mb-[12rem]' : ''}`
+        `${isIPhone ? 'mt-[-4rem] pb-[12rem]' : ''}`
         )}>
           <Canvas camera={{ position: [0, 0, isIPhone ? 9 : 6] }}>
             <ambientLight intensity={1} />
