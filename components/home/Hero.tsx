@@ -76,10 +76,10 @@ export const Hero = () => {
         </div>
           
         <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto",
-        `${isIPhone ? 'pt-[-10rem] pb-[20rem]' : ''}`,
+        `${isIPhone ? 'pt-[-14rem] pb-[20rem]' : ''}`,
          `${!isIPhone && isMobile ? 'pt-[4rem]' : ''}`
         )}>
-          <Canvas camera={{ position: [0, 0, isIPhone ? 8.5 : 5] }}>
+          <Canvas camera={{ position: [0, 0, isIPhone ? 7.5 : 4.9] }}>
             <ambientLight intensity={1} />
               <AquaKeyboard />
           </Canvas>
