@@ -47,8 +47,8 @@ export const Hero = () => {
     <Section>
       <div id="hero-section" className="flex pt-navigation-height md:pt-0 flex-col md:mb-[6rem] md:flex-row md:justify-center items-center h-screen">
        <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1">
-          {/* <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">Welcome To Voltrox</h1> */}
-          <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">{ `${navigator.userAgent} : ${isIPhone}` }</h1>
+          <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">Welcome To Voltrox</h1>
+          {/* <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">{ `${navigator.userAgent} : ${isIPhone}` }</h1> */}
           <div className="text-3xl md:text-5xl my-8">
             <p className="hidden md:block mb-4">
               <span className="text-primary leading-none">&#123;</span> Coding <span className="text-primary text-5xl leading-none">&#125;</span> the Future{' '}
@@ -76,10 +76,10 @@ export const Hero = () => {
         </div>
           
         <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto",
-        `${isIPhone ? 'pt-[-8rem] pb-[20rem]' : ''}`,
+        `${isIPhone ? 'pt-[-10rem] pb-[20rem]' : ''}`,
          `${!isIPhone && isMobile ? 'pt-[4rem]' : ''}`
         )}>
-          <Canvas camera={{ position: [0, 0, isIPhone ? 9 : 5.2] }}>
+          <Canvas camera={{ position: [0, 0, isIPhone ? 8.5 : 5] }}>
             <ambientLight intensity={1} />
               <AquaKeyboard />
           </Canvas>
