@@ -65,6 +65,8 @@ module.exports = {
     backgroundImage: {
       "primary-gradient":
         "linear-gradient(92.88deg, rgba(84, 203, 184) 9.16%, rgb(87, 221, 200) 43.89%, rgba(84, 203, 184) 64.72%)",
+        "reverse-gradient":
+        "linear-gradient(92.88deg, rgb(87, 221, 200) 64.72%, rgba(84, 203, 184) 43.89%, rgb(87, 221, 200) 9.16%)",
       "page-gradient":
         "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), transparent)",
       "contact-gradient":

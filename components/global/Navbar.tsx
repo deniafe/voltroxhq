@@ -56,7 +56,7 @@ export const Navbar = () => {
           {navLinks.map((link, index) => (
             <div
               key={index}
-              className={`mr-8 px-4 py-2 text-sm h-full pt-6 pb-6 font-light text-white cursor-pointer transition duration-300 ${
+              className={`mr-8 px-4 py-2 text-sm h-full pt-6 pb-6 font-light text-white cursor-pointer transition hover:bg-white hover:bg-opacity-5 duration-300 ${
                 router.asPath === link.href ? 'border-b-2 border-white' : ''
               }`}
               style={{ fontFamily: 'Inconsolata' }}

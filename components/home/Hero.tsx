@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Canvas } from '@react-three/fiber';
 import classNames from "classnames";
+import Link from 'next/link';
 
 import { Section } from '@/components/global/Section'
 import { Button } from '@/components/global/button'
@@ -9,6 +10,24 @@ import { AquaKeyboard } from './AquaKeyboard'
 export const Hero = () => {
   const [isMobile, setIsMobile] = useState(false)
   const [isIPhone, setIsIPhone] = useState(false)
+
+  const handleScroll = () => {
+    const section = document.querySelector('#contact-section');
+
+    section?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
+  };
+
+  const handleScrollToTools = () => {
+    const section = document.querySelector('#hero-image');
+
+    section?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
+  };
 
   useEffect(() => {
     // Add a listener for changes to the screen size
@@ -41,7 +60,7 @@ export const Hero = () => {
     }
     console.log('Are you on an iPhone device', isIPhone)
     console.log(navigator.userAgent)
-  }, []);
+  }, [])
 
   return (
     <Section>
@@ -67,10 +86,10 @@ export const Hero = () => {
             
           </div>
           <div className="flex justify-center items-center">
-            <div className="rounded-full transition duration-150 ease-in-out px-8 py-2 bg-primary-gradient hover:bg-primary text-white text-sm inline-block uppercase">
-            Contact Us</div>
-            <div className=" px-8 py-2 transition duration-150 ease-in-out text-primary hover:text-teal-600 inline-block text-sm uppercase">
-              Explore Voltrox</div>
+            <button onClick={handleScroll} className="rounded-full transition duration-150 ease-in-out px-8 py-2 bg-primary-gradient hover:bg-reverse-gradient text-white text-sm inline-block uppercase">
+            Contact Us</button>
+            <button onClick={handleScrollToTools} className=" px-8 py-2 transition duration-150 ease-in-out text-primary hover:text-teal-600 inline-block text-sm uppercase">
+              Explore Voltrox</button>
           </div>
           {/* <Button>Contact Us</Button> */}
         </div>
