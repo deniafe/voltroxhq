@@ -77,7 +77,7 @@ export const Contact = () => {
               <option 
               value='$5001-$15000'>$5001 - $15000</option>
               <option  
-              value='$150001-above'>$150001 - Above</option>
+              value='$15001-above'>$15001 - Above</option>
             </select>
           </label>
 
