@@ -35,7 +35,7 @@ export const MobileNavBar = () => {
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about' },
     { label: 'Services', href: '/services' },
-    { label: 'Work With Us', href: '/work' },
+    // { label: 'Work With Us', href: '/work' },
     { label: 'Career', href: '/career' },
     { label: 'Investors', href: '/investors' },
   ];

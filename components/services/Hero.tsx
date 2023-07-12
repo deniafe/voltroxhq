@@ -5,7 +5,8 @@ import Link from 'next/link';
 
 import { Section } from '@/components/global/Section'
 import { Button } from '@/components/global/button'
-import { AquaKeyboard } from './AquaKeyboard'
+import { Office } from './Office5'
+import { Adeyemi } from './Adeyemi'
 
 export const Hero = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -64,43 +65,47 @@ export const Hero = () => {
 
   return (
     <Section>
-      <div id="hero-section" className="flex pt-navigation-height md:pt-0 flex-col md:mb-[6rem] md:flex-row md:justify-center items-center h-screen">
+      <div id="hero-section" className="flex pt-navigation-height md:pt-0 flex-col md:mb-[16rem] md:flex-row md:justify-center items-center h-screen">
        <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1">
-          <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">Welcome To Voltrox</h1>
+          <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">Our Services</h1>
           {/* <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">{ `${navigator.userAgent} : ${isIPhone}` }</h1> */}
-          <div className="text-3xl md:text-5xl my-8">
-            <p className="hidden md:block mb-4">
-              <span className="text-primary leading-none">&#123;</span> Coding <span className="text-primary text-5xl leading-none">&#125;</span> the Future{' '}
-              <span className="text-primary leading-none">=&gt; </span>
-              <br />
-              Empowering Businesses with 
-              <br  />
-              Innovative Solutions<span className="text-primary leading-none">;</span>
+          <div className="text-3xl md:text-5xl my-6">
+            <p className="hidden md:block">
+              Building On-The-Go 
             </p>
-            <p className="md:hidden md:mb-4">
-              <span className="text-primary leading-none">&#123;</span> Coding <span className="text-primary text-5xl leading-none">&#125;</span> the Future{' '}
-              <span className="text-primary leading-none">=&gt; </span>
-              <br className="hidden md:block" />
-              Empowering Businesses with Innovative Solutions<span className="text-primary leading-none">;</span>
-            </p>
-            
+          </div>
+          <div className="hidden md:block text-lg md:mb-8">
+            At VOLTROX HQ LLC we specialize in the introduction of startups, 
+            <br />
+            marketing and software products that upend the status quo 
+            <br />
+            and distrupt markets for our clients
+          </div>
+          <div className="md:hidden text-lg mb-[4rem]">
+            At VOLTROX HQ LLC we specialize in the introduction of startups, 
+            marketing and software products that upend the status quo 
+            and distrupt markets for our clients
           </div>
           <div className="flex justify-center items-center">
             <button onClick={handleScroll} className="rounded-full transition duration-150 ease-in-out px-8 py-2 bg-primary-gradient hover:bg-reverse-gradient text-white text-sm inline-block uppercase">
-            Contact Us</button>
-            <button onClick={handleScrollToTools} className=" px-8 py-2 transition duration-150 ease-in-out text-primary hover:text-teal-600 inline-block text-sm uppercase">
-              Explore Voltrox</button>
+            Work With Us</button>
+            {/* <button onClick={handleScrollToTools} className=" px-8 py-2 transition duration-150 ease-in-out text-primary hover:text-teal-600 inline-block text-sm uppercase">
+              Explore Services</button> */}
           </div>
           {/* <Button>Contact Us</Button> */}
         </div>
           
-        <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto",
-        `${isIPhone ? 'pt-[-14rem] pb-[20rem]' : ''}`,
+        <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 w-screen h-screen md:w-auto",
+        `${isIPhone ? 'pt-[8rem] pb-[20rem]' : ''}`,
          `${!isIPhone && isMobile ? 'pt-[4rem]' : ''}`
         )}>
-          <Canvas camera={{ position: [0, 0, isIPhone ? 7 : 4.9] }}>
+          <Canvas>
             <ambientLight intensity={1} />
-              <AquaKeyboard />
+              <Office />
+              {/* <group name="Empty" position={[0.07, -0.6, 2.9]} rotation={[3.1, -2.2, 2.8]} scale={1}> */}
+              <group name="Empty" position={[0.15, -0.45, 2.8]} rotation={[1.8, -3.3, 2.2]} scale={1}>
+                <Adeyemi animation={"Typing"} />
+              </group>
           </Canvas>
         </div>
       </div>

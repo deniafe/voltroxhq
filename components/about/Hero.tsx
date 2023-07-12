@@ -4,8 +4,7 @@ import classNames from "classnames";
 import Link from 'next/link';
 
 import { Section } from '@/components/global/Section'
-import { Button } from '@/components/global/button'
-import { AquaKeyboard } from './AquaKeyboard'
+import { AboutHero } from './AboutHero'
 
 export const Hero = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -65,42 +64,42 @@ export const Hero = () => {
   return (
     <Section>
       <div id="hero-section" className="flex pt-navigation-height md:pt-0 flex-col md:mb-[6rem] md:flex-row md:justify-center items-center h-screen">
-       <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1">
-          <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">Welcome To Voltrox</h1>
-          {/* <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">{ `${navigator.userAgent} : ${isIPhone}` }</h1> */}
-          <div className="text-3xl md:text-5xl my-8">
-            <p className="hidden md:block mb-4">
-              <span className="text-primary leading-none">&#123;</span> Coding <span className="text-primary text-5xl leading-none">&#125;</span> the Future{' '}
-              <span className="text-primary leading-none">=&gt; </span>
-              <br />
-              Empowering Businesses with 
-              <br  />
-              Innovative Solutions<span className="text-primary leading-none">;</span>
+      <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1">
+          <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">About Us</h1>
+          <div className="text-3xl md:text-5xl my-6">
+            <p className="">
+              Breathe And Live 
             </p>
-            <p className="md:hidden md:mb-4">
-              <span className="text-primary leading-none">&#123;</span> Coding <span className="text-primary text-5xl leading-none">&#125;</span> the Future{' '}
-              <span className="text-primary leading-none">=&gt; </span>
-              <br className="hidden md:block" />
-              Empowering Businesses with Innovative Solutions<span className="text-primary leading-none">;</span>
-            </p>
-            
           </div>
+          <div className="hidden md:block text-lg mb-[4rem] md:mb-8">
+            Voltrox is about bringing like-minded people together
+            <br />
+            who exemplify talent in various areas of
+            technology to actualize our goal,
+            <br />
+            BREATHE AND LIVE
+          </div>
+          <div className="md:hidden text-md mb-[4rem] md:mb-8">
+            Voltrox is about bringing like-minded people together
+            who exemplify talent in various areas of
+            technology to actualize our goal,
+            <br />
+            BREATHE AND LIVE
+          </div>
+
           <div className="flex justify-center items-center">
             <button onClick={handleScroll} className="rounded-full transition duration-150 ease-in-out px-8 py-2 bg-primary-gradient hover:bg-reverse-gradient text-white text-sm inline-block uppercase">
-            Contact Us</button>
-            <button onClick={handleScrollToTools} className=" px-8 py-2 transition duration-150 ease-in-out text-primary hover:text-teal-600 inline-block text-sm uppercase">
-              Explore Voltrox</button>
+            Get In Touch</button>
           </div>
-          {/* <Button>Contact Us</Button> */}
         </div>
           
         <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto",
-        `${isIPhone ? 'pt-[-14rem] pb-[20rem]' : ''}`,
-         `${!isIPhone && isMobile ? 'pt-[4rem]' : ''}`
+        `${isIPhone ? 'pt-[8rem] pb-[20rem]' : ''}`,
+        //  `${!isIPhone && isMobile ? 'pt-[8rem]' : ''}`
         )}>
-          <Canvas camera={{ position: [0, 0, isIPhone ? 7 : 4.9] }}>
+          <Canvas>
             <ambientLight intensity={1} />
-              <AquaKeyboard />
+              <AboutHero />
           </Canvas>
         </div>
       </div>

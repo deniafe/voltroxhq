@@ -27,14 +27,6 @@ export default function Home() {
         </>
         )
       }</Suspense>
-      
     </>
   )
-}
-
-export async function getServerSideProps() {
-  // Disable SSR by returning an empty object
-  return {
-    props: {},
-  };
 }
