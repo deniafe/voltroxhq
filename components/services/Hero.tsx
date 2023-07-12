@@ -64,7 +64,7 @@ export const Hero = () => {
 
   return (
     <Section>
-      <div id="hero-section" className="flex pt-navigation-height md:pt-0 flex-col md:mb-[16rem] md:flex-row md:justify-center items-center h-screen">
+      <div id="hero-section" className="flex pt-navigation-height mb-[16rem] md:pt-0 flex-col md:mb-[16rem] md:flex-row md:justify-center items-center h-screen">
        <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1">
           <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">Our Services</h1>
           {/* <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">{ `${navigator.userAgent} : ${isIPhone}` }</h1> */}
@@ -80,7 +80,7 @@ export const Hero = () => {
             <br />
             and distrupt markets for our clients
           </div>
-          <div className="md:hidden text-lg  md:mb-8">
+          <div className="md:hidden text-lg mb-8">
             At VOLTROX HQ LLC we specialize in the introduction of startups, 
             marketing and software products that upend the status quo 
             and distrupt markets for our clients
@@ -96,7 +96,7 @@ export const Hero = () => {
           
         <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 w-screen h-screen md:w-auto",
         `${isIPhone ? 'pt-[8rem] pb-[20rem]' : ''}`,
-         `${!isIPhone && isMobile ? 'pt-[4rem]' : ''}`
+        //  `${!isIPhone && isMobile ? 'pt-[8rem] pb-[16rem]' : ''}`
         )}>
           <Canvas>
             <ambientLight intensity={1} />

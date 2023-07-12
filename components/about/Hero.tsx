@@ -63,7 +63,7 @@ export const Hero = () => {
 
   return (
     <Section>
-      <div id="hero-section" className="flex pt-navigation-height md:pt-0 flex-col md:mb-[6rem] md:flex-row md:justify-center items-center h-screen">
+      <div id="hero-section" className="flex pt-navigation-height md:pt-0 mb-[16rem] flex-col md:mb-[6rem] md:flex-row md:justify-center items-center h-screen">
       <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1">
           <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">About Us</h1>
           <div className="text-3xl md:text-5xl my-6">
