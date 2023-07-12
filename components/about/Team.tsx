@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from "../global/utils/motion";
 const teams = [
   {
     icon: '/img/adeyemi.png',
-    title: "CEO",
+    title: "Adeyemi Ayeni - CEO",
     text: `Adeyemi Ayeni, our Co-founder & CEO, has a strong background in product development and plan management, 
           particularly in web development, design, and marketing. He has demonstrated his commitment to inspiring and motivating individuals 
           through his founding of the Afrogoats community page on social media with over 100 million in reach, which encourages excellence 
@@ -17,7 +17,7 @@ const teams = [
   },
   {
     icon: '/img/shakira.png',
-    title: "COO",
+    title: "Shakira Johnson - COO",
     text: `Shakira Johnson, our Co-Founder & COO, brings over 15 years of experience in various industries,
           including telecommunications. She is deeply passionate about advancing humanity and democracy, 
           with a strong emphasis on accountability in politics. She holds a master’s degree in public administration 
