@@ -35,7 +35,7 @@ export function Shakira(props) {
   }, [animation])
 
   return (
-    <group {...props} ref={group} dispose={null} position={[-0.5, -3.2, 0]} rotation={[4.9, 0, -0.3]} scale={3.2}>
+    <group {...props} ref={group} dispose={null} position={[-0.5, -2.8, 0]} rotation={[4.9, 0, -0.4]} scale={3}>
       <primitive object={nodes.Hips} />
       <skinnedMesh name="Wolf3D_Body" geometry={nodes.Wolf3D_Body.geometry} material={materials.Wolf3D_Body} skeleton={nodes.Wolf3D_Body.skeleton} />
       <skinnedMesh name="Wolf3D_Outfit_Bottom" geometry={nodes.Wolf3D_Outfit_Bottom.geometry} material={materials.Wolf3D_Outfit_Bottom} skeleton={nodes.Wolf3D_Outfit_Bottom.skeleton} />
