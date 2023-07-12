@@ -95,7 +95,7 @@ export const Hero = () => {
         </div>
           
         <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 w-screen h-screen md:w-auto",
-        `${isIPhone ? 'pt-[8rem] pb-[20rem]' : ''}`,
+        `${isIPhone ? 'pt-[8rem] pb-[24rem]' : ''}`,
         //  `${!isIPhone && isMobile ? 'pt-[8rem] pb-[16rem]' : ''}`
         )}>
           <Canvas>
