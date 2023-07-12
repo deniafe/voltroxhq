@@ -60,7 +60,7 @@ module.exports = {
       15: "6rem",
       16: "6.4rem",
       20: "10rem",
-      24: "16rem",
+      24: "20rem",
       "navigation-height": "var(--navigation-height)",
     },
     backgroundImage: {
