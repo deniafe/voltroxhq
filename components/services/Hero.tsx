@@ -69,7 +69,7 @@ export const Hero = () => {
           <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">Our Services</h1>
           {/* <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">{ `${navigator.userAgent} : ${isIPhone}` }</h1> */}
           <div className="text-3xl md:text-5xl my-6">
-            <p className="hidden md:block">
+            <p className="">
               Building On-The-Go 
             </p>
           </div>
