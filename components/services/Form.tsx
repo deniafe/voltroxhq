@@ -96,7 +96,7 @@ export const Form = () => {
           </div>
             
           <div className="hidden md:flex flex-col flex-1 mt-12 md:pt-[4rem] md:ml-8 w-screen h-screen md:w-auto">
-            <Image src="/img/software_dev.png" alt="Logo" height={600} width={600} />
+            <Image src="/img/software_dev_big-bg.png" alt="Logo" height={600} width={600} />
 
             {/* <Canvas  camera={{ position: [0, 0, 5], fov: 75 }}>
             <OrbitControls

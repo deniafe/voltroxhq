@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from "../global/utils/motion";
 
 const teams = [
   {
-    icon: '/img/adeyemi.png',
+    icon: '/img/adeyemi-bg.png',
     title: "Adeyemi Ayeni - CEO",
     text: `Adeyemi Ayeni, our Co-founder & CEO, has a strong background in product development and plan management, 
           particularly in web development, design, and marketing. He has demonstrated his commitment to inspiring and motivating individuals 
@@ -16,7 +16,7 @@ const teams = [
           using technology to foster change.`,
   },
   {
-    icon: '/img/shakira.png',
+    icon: '/img/shakira-bg.png',
     title: "Shakira Johnson - COO",
     text: `Shakira Johnson, our Co-Founder & COO, brings over 15 years of experience in various industries,
           including telecommunications. She is deeply passionate about advancing humanity and democracy, 
@@ -85,7 +85,7 @@ export const Team = () => {
         </p>
       </div>
 
-      <div className='mt-20 grid grid-cols-1 md:grid-cols-2 gap-10'>
+      <div className='mt-20 grid grid-cols-1 md:grid-cols-2 gap-20 md:px-[4rem]'>
         {teams.map((service, index) => (
           <TeamCard key={service.title} index={index} {...service} />
         ))}

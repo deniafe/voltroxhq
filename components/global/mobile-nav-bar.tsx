@@ -72,6 +72,7 @@ export const MobileNavBar = () => {
                   router.asPath === link.href ? 'border-b-2 border-white' : ''
                 }`}
                 style={{ fontFamily: 'Inconsolata' }}
+                onClick={() => router.push(link.href)}
               >
                 <Link href={link.href}>{link.label}</Link>
               </li>

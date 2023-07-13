@@ -6,7 +6,7 @@ import { Hero } from './Hero'
 
 export const Interface = () => {
   return (
-    <div className={`bg-page-gradient px-[1rem] md:px-[4rem]`}>
+    <div className={`bg-page-gradient`}>
       <Hero />
       <Team />
       <Exite />

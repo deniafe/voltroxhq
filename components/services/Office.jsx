@@ -7,7 +7,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Office (props) {
-  const { nodes, materials } = useGLTF('./models/office5.glb')
+  const { nodes, materials } = useGLTF('./models/office.glb')
   return (
     <group {...props} dispose={null} position={[-1.2, -0.25, 1]} rotation={[Math.PI / 10, Math.PI / 8, -Math.PI / 20]} scale={0.854}>
       <group name="Sketchfab_model" position={[-0.264, 0.673, 2.458]} rotation={[-1.541, -0.032, 0.248]} scale={0.013}>
@@ -61,19 +61,8 @@ export function Office (props) {
           <mesh name="MaterialFBXASC032FBXASC0354_ncl1_1001" geometry={nodes.MaterialFBXASC032FBXASC0354_ncl1_1001.geometry} material={materials.MaterialFBXASC032FBXASC0354_ncl1_1} position={[14.69, 51.403, 11.988]} rotation={[-Math.PI / 2, 0.147, -Math.PI]} scale={[0.53, 0.715, 0.715]} />
         </group>
       </group>
-      {/* <group name="Empty" position={[-1.086, 1.356, 3.551]} rotation={[Math.PI, -1.491, Math.PI]}>
-        <mesh name="EyeLeft" geometry={nodes.EyeLeft.geometry} material={materials['Wolf3D_Eye.004']} position={[-1.183, -0.717, -1.624]} />
-        <mesh name="EyeRight" geometry={nodes.EyeRight.geometry} material={materials['Wolf3D_Eye.004']} position={[-1.183, -0.717, -1.624]} />
-        <mesh name="Wolf3D_Body" geometry={nodes.Wolf3D_Body.geometry} material={materials['Wolf3D_Body.004']} position={[-1.183, -0.717, -1.624]} />
-        <mesh name="Wolf3D_Glasses" geometry={nodes.Wolf3D_Glasses.geometry} material={materials['Wolf3D_Glasses.004']} position={[-1.183, -0.717, -1.624]} />
-        <mesh name="Wolf3D_Head" geometry={nodes.Wolf3D_Head.geometry} material={materials['Wolf3D_Skin.004']} position={[-1.183, -0.717, -1.624]} />
-        <mesh name="Wolf3D_Outfit_Bottom" geometry={nodes.Wolf3D_Outfit_Bottom.geometry} material={materials['Wolf3D_Outfit_Bottom.004']} position={[-1.183, -0.717, -1.624]} />
-        <mesh name="Wolf3D_Outfit_Footwear" geometry={nodes.Wolf3D_Outfit_Footwear.geometry} material={materials['Wolf3D_Outfit_Footwear.004']} position={[-1.183, -0.717, -1.624]} />
-        <mesh name="Wolf3D_Outfit_Top" geometry={nodes.Wolf3D_Outfit_Top.geometry} material={materials['Wolf3D_Outfit_Top.004']} position={[-1.183, -0.717, -1.624]} />
-        <mesh name="Wolf3D_Teeth" geometry={nodes.Wolf3D_Teeth.geometry} material={materials['Wolf3D_Teeth.004']} position={[-1.183, -0.717, -1.624]} />
-      </group> */}
     </group>
   )
 }
 
-useGLTF.preload('./models/office5.glb')
+useGLTF.preload('./models/office.glb')

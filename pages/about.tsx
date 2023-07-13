@@ -12,12 +12,12 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Voltrox | Services</title>
+        <title>Voltrox | About Us</title>
         <meta name="description" content="Voltrox" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.jpeg" />
       </Head>
-      <Suspense fallback={null}>{start ? 
+      <Suspense fallback={<LoadingScreen started={start} onStarted={() => setStart(true)} />}>{start ? 
         (
           <MainLayout>
             <Interface />

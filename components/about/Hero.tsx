@@ -64,7 +64,7 @@ export const Hero = () => {
   return (
     <Section>
       <div id="hero-section" className="flex pt-navigation-height md:pt-0 mb-[16rem] flex-col md:mb-[6rem] md:flex-row md:justify-center items-center h-screen">
-      <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1">
+      <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1 md:pr-[2rem] md:pl-[8rem]">
           <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">About Us</h1>
           <div className="text-3xl md:text-5xl my-6">
             <p className="">
@@ -79,7 +79,7 @@ export const Hero = () => {
             <br />
             BREATHE AND LIVE
           </div>
-          <div className="md:hidden text-md mb-[4rem] md:mb-8">
+          <div className="md:hidden text-md mb-[4rem] md:mb-8 px-[2rem]">
             Voltrox is about bringing like-minded people together
             who exemplify talent in various areas of
             technology to actualize our goal,

@@ -4,7 +4,7 @@ import classNames from "classnames";
 import Link from 'next/link';
 
 import { Section } from '@/components/global/Section'
-import { Office } from './Office5'
+import { Office } from './Office'
 import { Adeyemi } from './Adeyemi'
 
 export const Hero = () => {
@@ -80,7 +80,7 @@ export const Hero = () => {
             <br />
             and distrupt markets for our clients
           </div>
-          <div className="md:hidden text-lg mb-8">
+          <div className="md:hidden text-lg mb-8 px-[2rem]">
             At VOLTROX HQ LLC we specialize in the introduction of startups, 
             marketing and software products that upend the status quo 
             and distrupt markets for our clients
