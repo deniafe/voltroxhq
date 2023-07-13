@@ -3,7 +3,6 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from "@react-three/drei";
 import { Section } from '@/components/global/Section'
 import { Shakira } from './Shakira'
-import { Laptop } from './Laptop'
 
 export const Form = () => {
   return (
