@@ -7,7 +7,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 
 export function Slider() {
   return (
@@ -18,6 +18,10 @@ export function Slider() {
         centeredSlides={true}
         slidesPerView={'auto'}
         loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -26,7 +30,7 @@ export function Slider() {
           // slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]} 
+        modules={[Autoplay, EffectCoverflow, Pagination]} 
         // pagination={{ clickable: true }}
         navigation={{
           nextEl: '.swiper-button-next',
