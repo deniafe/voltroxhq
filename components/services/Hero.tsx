@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { Canvas } from '@react-three/fiber';
+import { motion } from 'framer-motion';
+import { HeroText } from './HeroText'
 import classNames from "classnames";
 import Link from 'next/link';
 
@@ -62,50 +63,55 @@ export const Hero = () => {
     console.log(navigator.userAgent)
   }, [])
 
+
+  // const animationVariants = {
+  //   initial: {
+  //     opacity: 0,
+  //     y: 25,
+  //   },
+  //   whileInView: {
+  //     opacity: 1,
+  //     y: 0,
+  //   },
+  //   animate: {
+  //     opacity: 1,
+  //     y: 0,
+  //   },
+  //   exit: {
+  //     opacity: 0,
+  //     y: 25,
+  //   },
+  // };
+
+  const animationTransition = {
+    duration: 1,
+    delay: 1.5,
+    repeat: Infinity,
+    repeatType: 'reverse',
+  };
+
+
   return (
     <Section>
       <div id="hero-section" className="flex pt-navigation-height mb-[16rem] md:pt-0 flex-col md:mb-[16rem] md:flex-row md:justify-center items-center md:h-screen">
        <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1">
-          <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">Our Services</h1>
-          {/* <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">{ `${navigator.userAgent} : ${isIPhone}` }</h1> */}
-          <div className="text-3xl md:text-5xl my-6">
-            <p className="">
-              Building On-The-Go 
-            </p>
-          </div>
-          <div className="hidden md:block text-lg md:mb-8">
-            At VOLTROX HQ LLC we specialize in the introduction of startups, 
-            <br />
-            marketing and software products that upend the status quo 
-            <br />
-            and distrupt markets for our clients
-          </div>
-          <div className="md:hidden text-lg mb-8 px-[2rem]">
-            At VOLTROX HQ LLC we specialize in the introduction of startups, 
-            marketing and software products that upend the status quo 
-            and distrupt markets for our clients
-          </div>
-          <div className="flex justify-center items-center">
-            <button onClick={handleScroll} className="rounded-full transition duration-150 ease-in-out px-8 py-2 bg-primary-gradient hover:bg-reverse-gradient text-white text-sm inline-block uppercase">
-            Work With Us</button>
-            {/* <button onClick={handleScrollToTools} className=" px-8 py-2 transition duration-150 ease-in-out text-primary hover:text-teal-600 inline-block text-sm uppercase">
-              Explore Services</button> */}
-          </div>
-          {/* <Button>Contact Us</Button> */}
+        <div className="text-3xl md:text-5xl my-6">
+          <p className="">
+            Build On-The-Go 
+          </p>
+        </div>
+        <div className="text-md mb-8 nowrap px-[2rem] md:px-[4rem]">
+         <HeroText />
+        </div>
+        <div className="flex justify-center items-center">
+          <button onClick={handleScroll} className="rounded-full transition duration-150 ease-in-out px-8 py-2 bg-primary-gradient hover:bg-reverse-gradient text-white text-sm inline-block uppercase">
+          Work With Us</button>
+        </div>
         </div>
           
         <div className={classNames("flex flex-col flex-1 px-[4rem] md:mt-0 w-screen md:w-1/2 md:mb-0",
-        // `${isIPhone ? 'pt-[8rem] pb-[24rem]' : ''}`,
-        //  `${!isIPhone && isMobile ? 'pt-[4rem]' : ''}`
         )}>
           <Slider />
-          {/* <Canvas>
-            <ambientLight intensity={1} />
-              <Office />
-              <group name="Empty" position={[0.15, -0.45, 2.8]} rotation={[1.8, -3.3, 2.2]} scale={1}>
-                <Adeyemi animation={"Typing"} />
-              </group>
-          </Canvas> */}
         </div>
       </div>
     </Section>
