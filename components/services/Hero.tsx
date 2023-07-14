@@ -4,8 +4,8 @@ import classNames from "classnames";
 import Link from 'next/link';
 
 import { Section } from '@/components/global/Section'
-import { Office } from './Office'
-import { Adeyemi } from './Adeyemi'
+import { Slider } from './Slider'
+// import { Adeyemi } from './Adeyemi'
 
 export const Hero = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -64,7 +64,7 @@ export const Hero = () => {
 
   return (
     <Section>
-      <div id="hero-section" className="flex pt-navigation-height mb-[16rem] md:pt-0 flex-col md:mb-[16rem] md:flex-row md:justify-center items-center h-screen">
+      <div id="hero-section" className="flex pt-navigation-height mb-[16rem] md:pt-0 flex-col md:mb-[16rem] md:flex-row md:justify-center items-center md:h-screen">
        <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1">
           <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">Our Services</h1>
           {/* <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">{ `${navigator.userAgent} : ${isIPhone}` }</h1> */}
@@ -94,18 +94,18 @@ export const Hero = () => {
           {/* <Button>Contact Us</Button> */}
         </div>
           
-        <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 w-screen h-screen md:w-auto",
-        `${isIPhone ? 'pt-[8rem] pb-[24rem]' : ''}`,
-         `${!isIPhone && isMobile ? 'pt-[4rem]' : ''}`
+        <div className={classNames("flex flex-col flex-1 px-[4rem] md:mt-0 w-screen md:w-1/2 md:mb-0",
+        // `${isIPhone ? 'pt-[8rem] pb-[24rem]' : ''}`,
+        //  `${!isIPhone && isMobile ? 'pt-[4rem]' : ''}`
         )}>
-          <Canvas>
+          <Slider />
+          {/* <Canvas>
             <ambientLight intensity={1} />
               <Office />
-              {/* <group name="Empty" position={[0.07, -0.6, 2.9]} rotation={[3.1, -2.2, 2.8]} scale={1}> */}
               <group name="Empty" position={[0.15, -0.45, 2.8]} rotation={[1.8, -3.3, 2.2]} scale={1}>
                 <Adeyemi animation={"Typing"} />
               </group>
-          </Canvas>
+          </Canvas> */}
         </div>
       </div>
     </Section>
