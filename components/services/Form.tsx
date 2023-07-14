@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from "@react-three/drei";
 import { Section } from '@/components/global/Section'
-import { Laptop } from './Laptop'
 
 export const Form = () => {
   return (
