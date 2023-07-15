@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import AnimatedText from './AnimatedText';
+import AnimatedText from '@/components/AnimatedText';
 // import "./styles.css";
 
 export default function HeroText() {
@@ -57,7 +57,7 @@ export default function HeroText() {
   }, []);
 
   return (
-    <div className="text-center md:px-[4rem]">
+    <div className="text-center px-[1rem]">
       <h1 className="text-3xl md:text-5xl my-6">
         Build On-The-Go 
       </h1>

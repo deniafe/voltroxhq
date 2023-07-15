@@ -29,7 +29,7 @@ export const EnjoyIssueTracking = () => {
           image="img/roadmap.webp"
           text="Our agile development methodology allows us to adapt to evolving needs and deliver high-quality software within agreed timelines."
         />
-        <Features.Grid
+        {/* <Features.Grid
           features={[
             {
               icon: ParentSubIcon,
@@ -53,7 +53,7 @@ export const EnjoyIssueTracking = () => {
             },
             {
               icon: DiscussionIcon,
-              title: "Consulting and Technology Advisory.",
+              title: "Consulting.",
               text: "We offer consulting services to help businesses make informed decisions regarding technology solutions.",
             },
             {
@@ -77,7 +77,7 @@ export const EnjoyIssueTracking = () => {
               text: " offers a comprehensive range of digital marketing services to help businesses establish a strong online presence, increase brand visibility, and drive targeted traffic to their websites.",
             },
           ]}
-        />
+        /> */}
         {/* <Features.Cards
           features={[
             {

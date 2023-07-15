@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from 'next/image';
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-
 import { fadeIn, textVariant } from "../global/utils/motion";
 
 const teams = [
   {
     icon: '/img/adeyemi-bg.png',
+    image: '/img/adeyemi_real.jpg',
     title: "Adeyemi Ayeni - CEO",
     text: `Adeyemi Ayeni, our Co-founder & CEO, has a strong background in product development and plan management, 
           particularly in web development, design, and marketing. He has demonstrated his commitment to inspiring and motivating individuals 
@@ -17,18 +17,20 @@ const teams = [
   },
   {
     icon: '/img/shakira-bg.png',
+    image: '/img/shakira_real.jpg',
     title: "Shakira Johnson - COO",
     text: `Shakira Johnson, our Co-Founder & COO, brings over 15 years of experience in various industries,
           including telecommunications. She is deeply passionate about advancing humanity and democracy, 
           with a strong emphasis on accountability in politics. She holds a master’s degree in public administration 
           from the University of Illinois at Chicago and worked in local government early on in her career before working in 
-          telecommunications as a plan/supply chain manager respectively.`,
+          telecommunications as a project/supply chain manager respectively.`,
   },
 ];
 
 type Service = {
   title: string;
   icon: string;
+  image: string;
   text: string;
 };
 
@@ -36,31 +38,39 @@ type ServiceCardProps = {
   index: number;
 } & Service;
 
-const TeamCard: React.FC<ServiceCardProps> = ({ index, title, text, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full bg-page-gradient p-[1px] border-background border-[1px] rounded-[20px] shadow-card'
-    >
-      <div className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
-     
-        <h3 className='text-xl text-white text-[20px] font-bold text-center mt-[3rem] md:mt-[4rem] md:mb-[2rem]'>
-          {title}
-        </h3>
+const TeamCard: React.FC<ServiceCardProps> = ({ index, title, text, icon, image }) => {
+  const [isHovered, setIsHovered] = useState(false);
 
-        <Image src={icon} alt="Logo" height={180} width={180} />
+  return (
+    <Tilt className='xs:w-[250px] w-full'>
+      <motion.div
+        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+        className='w-full bg-page-gradient p-[1px] border-background border-[1px] rounded-[20px] shadow-card'
+      >
+        <div
+          className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <h3 className='text-xl text-white text-[20px] font-bold text-center mt-[3rem] md:mt-[4rem] md:mb-[2rem]'>
+            {title}
+          </h3>
 
-        <p className='text-sm mx-auto mt-[3rem] md:mt-[4rem]' >
-          {text}
-        </p>
-      </div>
-    </motion.div>
-  </Tilt>
-);
+            <Image src={isHovered ? image : icon} alt="Logo" height={180} width={180} className={`transition-opacity duration-300 ease-in-out`} />
+
+          <p className='text-sm mx-auto mt-[3rem] md:mt-[4rem]'>
+            {text}
+          </p>
+        </div>
+      </motion.div>
+    </Tilt>
+  );
+};
 
 export const Team = () => {
   return (
-    <motion.div className="pt-[1rem] md:mt-[12rem] md:mb-[16rem]"
+    <motion.div
+      className="pt-[1rem] mt-[16rem] md:mt-[12rem] md:mb-[16rem]"
       initial={{
         opacity: 0,
         y: 50,
@@ -79,9 +89,9 @@ export const Team = () => {
           Meet Our Team
         </h2>
         <p className="mx-auto max-w-[80rem] text-lg text-primary-text md:mb-7 md:text-xl">
-        {`Our team of talented individuals come together with a shared vision of cultivating winning products
-        through collaboration and creativity. We are commited to providing our clients with exceptional care
-        and building solid, respectful relationships, which is a core value instilled in our founder's personal lives.`}
+          {`Our team of talented individuals come together with a shared vision of cultivating winning products
+          through collaboration and creativity. We are committed to providing our clients with exceptional care
+          and building solid, respectful relationships, which is a core value instilled in our founder's personal lives.`}
         </p>
       </div>
 

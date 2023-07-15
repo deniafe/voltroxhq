@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 // Word wrapper
 const Wrapper = (props) => {
   // We'll do this to prevent wrapping of words using CSS
-  return <span className="word-wrapper">{props.children}</span>;
+  return <span className="word-wrapper" style={{ whiteSpace: "nowrap" }} >{props.children}</span>;
 };
 
 // Map API "type" vaules to JSX tag names
@@ -52,7 +52,7 @@ const AnimatedCharacters = (props) => {
   const Tag = tagMap[props.type];
 
   return (
-    <Tag>
+    <Tag style={{marginBottom: '20px'}}>
       {words.map((word, index) => {
         return (
           // Wrap each word in the Wrapper component

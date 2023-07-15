@@ -1,7 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from "@react-three/drei";
 import { Section } from '@/components/global/Section'
 
 export const Form = () => {
@@ -12,7 +9,7 @@ export const Form = () => {
         className="flex pt-navigation-height w-screen md:pt-0 flex-col mb-[6rem] md:flex-row md:justify-center items-center z-15"
         >
         <div id="one" className="text-white text-center flex flex-col justify-center w-full items-center flex-1">
-          <div className="mt-0 md:rounded-2xl md:mt-1 px-[4rem] py-[2rem] w-full md:w-10/12" style={{ background: 'rgb(255, 255, 255, 0.1)' }}>
+          <div className="mt-0 md:rounded-2xl md:mt-1 px-[4rem] py-[2rem] w-full md:w-7/12" style={{ background: 'rgb(255, 255, 255, 0.1)' }}>
             <div className="text-2xl md:text-3xl mb-4">
               Work With Us
             </div>
@@ -41,16 +38,17 @@ export const Form = () => {
               />
             </label>
             <label className='flex flex-col px-6 bg-background rounded-lg'>
-              {/* <span className='text-white font-medium mb-4'>Services</span> */}
+              <span className='text-white font-md mb-4'>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options</span>
               <select
                 name='services'
                 required
                 placeholder="Services"
                 defaultValue=''
                 className='py-4 bg-background placeholder:text-secondary text-sm text-white outline-none border-none'
+                multiple
               >
                 <option value='' disabled hidden>
-                  Select a service
+                  Select service(s)
                 </option>
                 <option value='custom-software'>Custom Software</option>
                 <option value='web-development'>Web Development</option>
@@ -63,6 +61,7 @@ export const Form = () => {
                 <option value='digital-marketing-services'>Digital Marketing Services</option>
               </select>
             </label>
+
 
             <label className='flex flex-col px-6 bg-background rounded-lg'>
               {/* <span className='text-white font-medium mb-4'>Services</span> */}
@@ -94,8 +93,8 @@ export const Form = () => {
           </div>
           </div>
             
-          <div className="hidden md:flex flex-col flex-1 mt-12 md:pt-[4rem] md:ml-8 w-screen h-screen md:w-auto">
-            <Image src="/img/software_dev_big-bg.png" alt="Logo" height={600} width={600} />
+          {/* <div className="hidden md:flex flex-col flex-1 mt-12 md:pt-[4rem] md:ml-8 w-screen h-screen md:w-auto">
+            <Image src="/img/software_dev_big-bg.png" alt="Logo" height={600} width={600} /> */}
 
             {/* <Canvas  camera={{ position: [0, 0, 5], fov: 75 }}>
             <OrbitControls
@@ -107,7 +106,7 @@ export const Form = () => {
             <ambientLight intensity={1} />
               <Laptop />
             </Canvas> */}
-          </div>
+          {/* </div> */}
         </div>
       </Section>
   )

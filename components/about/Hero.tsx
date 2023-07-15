@@ -4,7 +4,8 @@ import classNames from "classnames";
 import Link from 'next/link';
 
 import { Section } from '@/components/global/Section'
-import { AboutHero } from './AboutHero'
+import { OrbitControls } from "@react-three/drei";
+import { Earth } from './Earth'
 
 export const Hero = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -65,12 +66,10 @@ export const Hero = () => {
     <Section>
       <div id="hero-section" className="flex pt-navigation-height md:pt-0 mb-[16rem] flex-col md:mb-[6rem] md:flex-row md:justify-center items-center h-screen">
       <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1 md:pr-[2rem] md:pl-[8rem]">
-          <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">About Us</h1>
-          <div className="text-3xl md:text-5xl my-6">
-            <p className="">
-              Breathe And Live 
-            </p>
-          </div>
+          {/* <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">About Us</h1> */}
+          <h1 className="text-3xl md:text-5xl my-6">
+              About Us
+          </h1>
           <div className="hidden md:block text-lg mb-[4rem] md:mb-8">
             Voltrox is about bringing like-minded people together
             <br />
@@ -93,13 +92,26 @@ export const Hero = () => {
           </div>
         </div>
           
-        <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto",
+        {/* <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto",
         `${isIPhone ? 'pt-[8rem] pb-[24rem]' : ''}`,
          `${!isIPhone && isMobile ? 'pt-[4rem]' : ''}`
         )}>
           <Canvas>
             <ambientLight intensity={1} />
               <AboutHero />
+          </Canvas>
+        </div> */}
+        <div className={classNames("flex-1 mt-[2rem] md:mt-[8rem] md:ml-8 w-screen h-screen md:w-auto",
+          `${isIPhone ? 'pb-[16rem]' : ''}`,
+        )}>
+          <Canvas>
+          <OrbitControls
+            autoRotate
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+            <Earth />
           </Canvas>
         </div>
       </div>

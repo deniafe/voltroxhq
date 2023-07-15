@@ -9,7 +9,7 @@ const services = [
   {
     icon: '/img/custom_dev-bg.png',
     title: "Custom Software",
-    text: "We specialize in developing custom software solutions tailored to your specific business needs. ",
+    text: "We specialize in developing custom software solutions from ERP to CRM and other SaaS solutions tailored to your business needs. ",
   },
   {
     icon: '/img/web_dev-bg.png',
