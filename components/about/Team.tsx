@@ -9,6 +9,7 @@ const teams = [
     icon: '/img/adeyemi-bg.png',
     image: '/img/adeyemi_real.jpg',
     title: "Adeyemi Ayeni - CEO",
+    alt: "Adeyemi Ayeni - CEO",
     text: `Adeyemi Ayeni, our Co-founder & CEO, has a strong background in product development and plan management, 
           particularly in web development, design, and marketing. He has demonstrated his commitment to inspiring and motivating individuals 
           through his founding of the Afrogoats community page on social media with over 100 million in reach, which encourages excellence 
@@ -19,6 +20,7 @@ const teams = [
     icon: '/img/shakira-bg.png',
     image: '/img/shakira_real.jpg',
     title: "Shakira Johnson - COO",
+    alt: "Shakira Johnson - COO",
     text: `Shakira Johnson, our Co-Founder & COO, brings over 15 years of experience in various industries,
           including telecommunications. She is deeply passionate about advancing humanity and democracy, 
           with a strong emphasis on accountability in politics. She holds a master’s degree in public administration 
@@ -31,6 +33,7 @@ type Service = {
   title: string;
   icon: string;
   image: string;
+  alt: string;
   text: string;
 };
 
@@ -38,7 +41,7 @@ type ServiceCardProps = {
   index: number;
 } & Service;
 
-const TeamCard: React.FC<ServiceCardProps> = ({ index, title, text, icon, image }) => {
+const TeamCard: React.FC<ServiceCardProps> = ({ index, title, text, icon, image, alt }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -56,7 +59,7 @@ const TeamCard: React.FC<ServiceCardProps> = ({ index, title, text, icon, image 
             {title}
           </h3>
 
-            <Image src={isHovered ? image : icon} alt="Logo" height={180} width={180} className={`transition-opacity duration-300 ease-in-out`} />
+            <Image src={isHovered ? image : icon} alt={alt} height={180} width={180} className={`transition-opacity duration-300 ease-in-out`} />
 
           <p className='text-sm mx-auto mt-[3rem] md:mt-[4rem]'>
             {text}

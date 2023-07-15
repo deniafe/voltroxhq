@@ -39,25 +39,25 @@ export function Slider() {
         className="mySwiper"
       >
        <SwiperSlide>
-          <img src="/img/1.jpg" className="rounded-lg" />
+          <img src="/img/1.jpg" alt="service_1" className="rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/img/2.jpg" className="rounded-lg" />
+          <img src="/img/2.jpg" alt="service_2" className="rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/img/3.jpg" className="rounded-lg" />
+          <img src="/img/3.jpg" alt="service_3" className="rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/img/4.jpg" className="rounded-lg" />
+          <img src="/img/4.jpg" alt="service_4" className="rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/img/5.jpg" className="rounded-lg" />
+          <img src="/img/5.jpg" alt="service_5" className="rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/img/6.jpg" className="rounded-lg" />
+          <img src="/img/6.jpg" alt="service_6" className="rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/img/7.jpg" className="rounded-lg" />
+          <img src="/img/7.jpg" alt="service_7" className="rounded-lg" />
         </SwiperSlide>
       </Swiper>
     </div>
