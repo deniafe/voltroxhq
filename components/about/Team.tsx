@@ -67,7 +67,7 @@ const TeamCard: React.FC<ServiceCardProps> = ({ index, title, text, icon, image,
               height={150}
               width={150}
               style={{
-                transition: 'transform 0.4s ease-in-out',
+                transition: 'transform 0.6s ease-in-out',
                 transform: isHovered ? 'scale(1.1) translateX(-10px)' : 'scale(1) translateX(0)'
               }}
               onMouseEnter={() => setIsHovered(true)}
@@ -80,7 +80,7 @@ const TeamCard: React.FC<ServiceCardProps> = ({ index, title, text, icon, image,
               height={180}
               width={180}
               style={{
-                transition: 'transform 0.4s ease-in-out',
+                transition: 'transform 0.6s ease-in-out',
                 transform: isHovered ? 'scale(1.1) translateX(-10px)' : 'scale(1) translateX(0)'
               }}
               onMouseEnter={() => setIsHovered(true)}

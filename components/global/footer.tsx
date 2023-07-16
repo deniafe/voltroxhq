@@ -56,6 +56,9 @@ export const Footer = () => (
             <a href="https://twitter.com/VoltroxHQ" target="_blank" >
               <TwitterIcon />
             </a>
+            <a href="https://facebook.com/voltroxhq" target="_blank" >
+              <FacebookIcon />
+            </a>
             <a href="https://www.instagram.com/voltroxhq" target="_blank" >
               <InstagramIcon />
             </a>
