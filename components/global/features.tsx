@@ -67,10 +67,10 @@ const MainFeature = ({
         </Container>
       </div>
       <Container className="w-[78rem] max-w-[90%] text-center">
-        <p className="mx-auto my-16 text-2xl leading-tight text-white md:w-[80%] md:text-4xl">
+        <p className="mx-auto mt-16 text-2xl leading-tight text-white md:w-[80%] md:text-4xl">
           {text}
         </p>
-        <hr className="mb-[7.2rem] h-[1px] border-none bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.1)_50%,transparent)]" />
+        {/* <hr className="mb-[7.2rem] h-[1px] border-none bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.1)_50%,transparent)]" /> */}
       </Container>
     </>
   );
@@ -87,14 +87,14 @@ type FeatureGridProps = {
 const FeatureGrid = ({ features }: FeatureGridProps) => {
   return (
     <Container>
-      <div className="mb-16 grid w-full grid-cols-1 place-items-center gap-y-9 text-sm text-primary-text md:mb-[14rem] md:grid-cols-3 md:text-md">
+      <div className="mb-16 grid w-full grid-cols-1 text-center gap-y-9 text-sm text-primary-text md:mb-[14rem] md:grid-cols-3 md:text-md">
         {features.map(({ title, text, icon: Icon }) => (
           <div
             className="max-w-[25.6rem] [&_svg]:mb-[4px] [&_svg]:fill-white md:[&_svg]:mr-[6px] md:[&_svg]:mb-[2px] md:[&_svg]:inline"
             key={title}
           >
             <Icon />
-            <span className="block text-white md:inline">{title}</span> {text}
+            <span className="block text-white md:inline">{title}</span>
           </div>
         ))}
       </div>

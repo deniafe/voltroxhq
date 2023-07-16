@@ -1,28 +1,25 @@
 import Link from "next/link";
 import { Container } from "./container";
 import { GithubIcon } from "./icons/github";
-import { Logo } from "./icons/logo";
 import Image from 'next/image';
-import { SlackIcon } from "./icons/slack";
 import { TwitterIcon } from "./icons/twitter";
+import { FacebookIcon } from "./icons/Facebook";
+import { InstagramIcon } from "./icons/Instagram";
+import { LinkedInIcon } from "./icons/LinkedIn";
 
 const footerLinks = [
   {
     title: "Product",
     links: [
-      { title: "Services", href: "#" },
-      { title: "Work with us", href: "#" },
-      { title: "Pricing", href: "#" },
-      // { title: "Changelog", href: "#" },
-      // { title: "Docs", href: "#" },
-      // { title: "Linear Method", href: "#" },
-      // { title: "Download", href: "#" },
+      { title: "Services", href: "/services" },
+      { title: "Work with us", href: "/services" },
+      // { title: "Pricing", href: "#" },
     ],
   },
   {
     title: "Company",
     links: [
-      { title: "About us", href: "#" },
+      { title: "About us", href: "/about" },
       { title: "Blog", href: "#" },
       { title: "Careers", href: "#" },
       // { title: "Customers", href: "#" },
@@ -33,8 +30,7 @@ const footerLinks = [
     title: "Resources",
     links: [
       { title: "Community", href: "#" },
-      { title: "Contact", href: "#" },
-      // { title: "DPA", href: "#" },
+      { title: "Contact", href: "/services" },
       { title: "Terms of service", href: "#" },
     ],
   },
@@ -42,7 +38,6 @@ const footerLinks = [
     title: "Developers",
     links: [
       { title: "API", href: "#" },
-      // { title: "Status", href: "#" },
       { title: "Careers", href: "#" },
     ],
   },
@@ -58,9 +53,22 @@ export const Footer = () => (
             {/* <Logo className="mr-4 h-4 w-4" /> - Designed worldwide */}
           </div>
           <div className="mt-auto flex space-x-4 pr-12 md:pr-0 text-grey">
-            <TwitterIcon />
-            <GithubIcon />
-            <SlackIcon />
+            <a href="https://twitter.com/VoltroxHQ" target="_blank" >
+              <TwitterIcon />
+            </a>
+            <a href="https://facebook.com/voltroxhq" target="_blank" >
+              <FacebookIcon />
+            </a>
+            <a href="https://www.instagram.com/voltroxhq" target="_blank" >
+              <InstagramIcon />
+            </a>
+            <a href="https://github.com/VoltroxHQ" target="_blank" >
+              <GithubIcon />
+            </a>
+            <a href="https://www.linkedin.com/company/voltroxhq" target="_blank" >
+              <LinkedInIcon />
+            </a>
+            
           </div>
         </div>
       </div>

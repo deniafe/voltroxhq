@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.jpeg" />
       </Head>
-      <Suspense fallback={null}>{start ? 
+      <Suspense fallback={<LoadingScreen started={start} onStarted={() => setStart(true)} />}>{start ? 
         (
           <MainLayout>
             <Interface />
@@ -27,14 +27,6 @@ export default function Home() {
         </>
         )
       }</Suspense>
-      
     </>
   )
-}
-
-export async function getServerSideProps() {
-  // Disable SSR by returning an empty object
-  return {
-    props: {},
-  };
 }

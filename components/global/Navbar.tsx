@@ -9,8 +9,8 @@ export const Navbar = () => {
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about' },
     { label: 'Services', href: '/services' },
-    { label: 'Work With Us', href: '/work' },
-    { label: 'Career', href: '/career' },
+    // { label: 'Work With Us', href: '/work' },
+    { label: 'Careers', href: '/career' },
     { label: 'Investors', href: '/investors' },
   ];
 
@@ -54,17 +54,18 @@ export const Navbar = () => {
         style={isLogoVisible ? { background: 'rgb(255, 255, 255, 0.07)' } : { background: 'transparent'}}
         >
           {navLinks.map((link, index) => (
-            <div
-              key={index}
-              className={`mr-8 px-4 py-2 text-sm h-full pt-6 pb-6 font-light text-white cursor-pointer transition hover:bg-white hover:bg-opacity-5 duration-300 ${
-                router.asPath === link.href ? 'border-b-2 border-white' : ''
-              }`}
-              style={{ fontFamily: 'Inconsolata' }}
-            >
-              {/* <Link href={link.href}> */}
-                {link.label}
-              {/* </Link> */}
-            </div>
+            <Link href={link.href}  key={index}>
+              <div
+                className={`mr-8 px-4 py-2 text-sm h-full pt-6 pb-6 font-light text-white cursor-pointer transition hover:bg-white hover:bg-opacity-5 duration-300 ${
+                  router.asPath === link.href ? 'border-b-2 border-white' : ''
+                }`}
+                style={{ fontFamily: 'Inconsolata' }}
+              >
+                
+                  {link.label}
+                
+              </div>
+            </Link>
           ))}
         </div>
       </nav>

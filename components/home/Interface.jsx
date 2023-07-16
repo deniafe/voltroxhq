@@ -4,9 +4,6 @@ import { HeroImage } from './HeroImage'
 import { CodeTyping } from './CodeTyping'
 import { EnjoyIssueTracking } from './enjoy-issue-tracking' 
 import { Tools } from './Tools'
-import { StarsCanvas } from './Stars'
-import { Contact } from './Contact'
-import { Section } from "../global/Section"
 import classNames from "classnames"
 
 export const Interface = () => {
@@ -29,12 +26,12 @@ export const Interface = () => {
       <CodeTyping />
 
       <EnjoyIssueTracking />
-      <div className='relative z-10 w-screen'>
+      {/* <div className='relative z-10 w-screen'>
         <StarsCanvas />
         <div className="absolute top-1">
           <Contact />
         </div>
-        </div>
+        </div> */}
       
     </div>
   )

@@ -86,12 +86,13 @@ export const Hero = () => {
             
           </div>
           <div className="flex justify-center items-center">
-            <button onClick={handleScroll} className="rounded-full transition duration-150 ease-in-out px-8 py-2 bg-primary-gradient hover:bg-reverse-gradient text-white text-sm inline-block uppercase">
-            Contact Us</button>
+            <Link href="/services#contact-section" className="rounded-full transition duration-150 ease-in-out px-8 py-2 bg-primary-gradient hover:bg-reverse-gradient text-white text-sm inline-block uppercase">
+            Contact Us</Link>
             <button onClick={handleScrollToTools} className=" px-8 py-2 transition duration-150 ease-in-out text-primary hover:text-teal-600 inline-block text-sm uppercase">
-              Explore Voltrox</button>
+                Explore Voltrox
+            </button>
           </div>
-          {/* <Button>Contact Us</Button> */}
+          
         </div>
           
         <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto",

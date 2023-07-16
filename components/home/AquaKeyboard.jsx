@@ -25,7 +25,7 @@ const roughGlassMaterial = new THREE.MeshPhysicalMaterial({
 export function AquaKeyboard(props) {
   // const { nodes, materials } = useGLTF('./models/aqua_keyboard.glb')
   const { nodes, materials } = useGLTF('./models/hero_model2.glb')
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     // Add a listener for changes to the screen size
@@ -58,17 +58,24 @@ export function AquaKeyboard(props) {
   const bulb = useRef();
 
   useFrame(async (state, delta) => {
+
     const elapsedTime = state.clock.getElapsedTime();
     const newY = Math.sin(elapsedTime * HELIX_SPEED) * 0.5;
     const bulbY = Math.sin(elapsedTime * BULB_SPEED) * 0.8;
 
     bulb.current.position.y = bulbY;
-  
-    key0.current.position.y = newY;
-    await sleep(3)
-    key1.current.position.y = newY;
-    await sleep(3)
-    key2.current.position.y = newY
+
+    if (key0.current && key1.current && key2.current) {
+      key0.current.position.y = newY;
+      await sleep(3)
+      if (key1.current) {
+        key1.current.position.y = newY;
+        await sleep(3)
+      }
+      if (key2.current) {
+        key2.current.position.y = newY
+      }
+    }
   
   });
 

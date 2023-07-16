@@ -35,7 +35,7 @@ export const MobileNavBar = () => {
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about' },
     { label: 'Services', href: '/services' },
-    { label: 'Work With Us', href: '/work' },
+    // { label: 'Work With Us', href: '/work' },
     { label: 'Career', href: '/career' },
     { label: 'Investors', href: '/investors' },
   ];
@@ -72,6 +72,7 @@ export const MobileNavBar = () => {
                   router.asPath === link.href ? 'border-b-2 border-white' : ''
                 }`}
                 style={{ fontFamily: 'Inconsolata' }}
+                onClick={() => router.push(link.href)}
               >
                 <Link href={link.href}>{link.label}</Link>
               </li>

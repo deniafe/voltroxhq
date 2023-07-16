@@ -1,10 +1,33 @@
-import MainLayout from '@/components/global/MainLayout'
-import React from 'react'
+import Head from 'next/head'
+import { Suspense, useState } from 'react';
 
-export default function services() {
+import { LoadingScreen } from '@/components/home/LoadingScreen';
+import MainLayout from '@/components/global/MainLayout';
+import { Interface } from '@/components/services/Interface'; 
+
+export default function Services() {
+  const [start, setStart] = useState(false);
+
   return (
-    <MainLayout>
-    <div>services</div>
-  </MainLayout>
+    <>
+      <Head>
+        <title>Voltrox | Services</title>
+        <meta name="description" content="Voltrox" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/icon.jpeg" />
+      </Head>
+      <Suspense fallback={<LoadingScreen started={start} onStarted={() => setStart(true)} />}>{start ? 
+        (
+          <MainLayout>
+            <Interface />
+          </MainLayout>
+        ) : (
+          <>
+            <LoadingScreen started={start} onStarted={() => setStart(true)} />
+        </>
+        )
+      }</Suspense>
+      
+    </>
   )
 }
