@@ -10,7 +10,7 @@ export const Navbar = () => {
     { label: 'About Us', href: '/about' },
     { label: 'Services', href: '/services' },
     // { label: 'Work With Us', href: '/work' },
-    { label: 'Career', href: '/career' },
+    { label: 'Careers', href: '/career' },
     { label: 'Investors', href: '/investors' },
   ];
 

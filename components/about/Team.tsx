@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from "../global/utils/motion";
 const teams = [
   {
     icon: '/img/adeyemi-bg.png',
-    image: '/img/adeyemi_real.jpg',
+    image: '/img/adeyemi_reel.jpeg',
     title: "Adeyemi Ayeni - CEO",
     alt: "Adeyemi Ayeni - CEO",
     text: `Adeyemi Ayeni, our Co-founder & CEO, has a strong background in product development and plan management, 
@@ -52,16 +52,44 @@ const TeamCard: React.FC<ServiceCardProps> = ({ index, title, text, icon, image,
       >
         <div
           className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+          // onMouseEnter={() => setIsHovered(true)}
+          // onMouseLeave={() => setIsHovered(false)}
         >
           <h3 className='text-xl text-white text-[20px] font-bold text-center mt-[3rem] md:mt-[4rem] md:mb-[2rem]'>
             {title}
           </h3>
 
-            <Image src={isHovered ? image : icon} alt={alt} height={180} width={180} className={`transition-opacity duration-300 ease-in-out`} />
+          {
+              isHovered ?
+              <Image
+              src={image}
+              alt={alt}
+              height={150}
+              width={150}
+              style={{
+                transition: 'transform 0.4s ease-in-out',
+                transform: isHovered ? 'scale(1.1) translateX(-10px)' : 'scale(1) translateX(0)'
+              }}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className="rounded-lg mt-[2rem]"
+            /> :
+            <Image
+              src={icon}
+              alt={alt}
+              height={180}
+              width={180}
+              style={{
+                transition: 'transform 0.4s ease-in-out',
+                transform: isHovered ? 'scale(1.1) translateX(-10px)' : 'scale(1) translateX(0)'
+              }}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            />
+            }
 
-          <p className='text-sm mx-auto mt-[3rem] md:mt-[4rem]'>
+
+          <p className='text-sm text-primary-text mx-auto mt-[3rem] md:mt-[4rem]'>
             {text}
           </p>
         </div>

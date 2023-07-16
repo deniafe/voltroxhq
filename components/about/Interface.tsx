@@ -1,7 +1,7 @@
 // import { Hero } from './Hero'
 import { Team } from './Team'
 import { Exite } from './Exite'
-import { Form } from './Form'
+import { Form } from '../global/Form'
 import { Hero } from './Hero'
 import { StarsCanvas } from '../about/Stars'
 

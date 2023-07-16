@@ -12,7 +12,7 @@ export const Hero = () => {
   const [isIPhone, setIsIPhone] = useState(false)
 
   const handleScroll = () => {
-    const section = document.querySelector('#contact-section');
+    const section = document.querySelector('#excite')
 
     section?.scrollIntoView({
       behavior: 'smooth',
@@ -70,19 +70,15 @@ export const Hero = () => {
           <h1 className="text-3xl md:text-5xl my-6">
               About Us
           </h1>
-          <div className="hidden md:block text-lg mb-[4rem] md:mb-8">
+          <div className="hidden md:block font-md text-2xl mb-[4rem] md:mb-8">
             Voltrox is about bringing like-minded people together
-            <br />
             who exemplify talent in various areas of
-            technology to actualize our goal,
-            <br />
-            BREATHE AND LIVE
+            technology to actualize our goal, BREATHE AND LIVE
           </div>
-          <div className="md:hidden text-md mb-[4rem] md:mb-8 px-[2rem]">
+          <div className="md:hidden text-lg mb-[4rem] md:mb-8 px-[2rem]">
             Voltrox is about bringing like-minded people together
             who exemplify talent in various areas of
             technology to actualize our goal,
-            <br />
             BREATHE AND LIVE
           </div>
 

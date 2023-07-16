@@ -8,7 +8,7 @@ export function Hero() {
     const anchor = window.location.hash.slice(1); // Get the anchor part of the URL without the '#'
 
     if (anchor) {
-      const section = document.getElementById(anchor);
+      const section = document.getElementById('excite');
       if (section) {
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
@@ -27,3 +27,5 @@ export function Hero() {
       </Section>
   )
 }
+
+

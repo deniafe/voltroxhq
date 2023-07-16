@@ -67,10 +67,10 @@ const MainFeature = ({
         </Container>
       </div>
       <Container className="w-[78rem] max-w-[90%] text-center">
-        <p className="mx-auto my-16 text-2xl leading-tight text-white md:w-[80%] md:text-4xl">
+        <p className="mx-auto mt-16 text-2xl leading-tight text-white md:w-[80%] md:text-4xl">
           {text}
         </p>
-        <hr className="mb-[7.2rem] h-[1px] border-none bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.1)_50%,transparent)]" />
+        {/* <hr className="mb-[7.2rem] h-[1px] border-none bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.1)_50%,transparent)]" /> */}
       </Container>
     </>
   );

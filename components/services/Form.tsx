@@ -80,7 +80,7 @@ export const Form = () => {
                 <option 
                 value='$5001-$15000'>$5001 - $15000</option>
                 <option  
-                value='$15001-above'>$15001 - Above</option>
+                value='$15001-above'>$15001 - Enterprise</option>
               </select>
             </label>
 
@@ -92,21 +92,6 @@ export const Form = () => {
             </form>
           </div>
           </div>
-            
-          {/* <div className="hidden md:flex flex-col flex-1 mt-12 md:pt-[4rem] md:ml-8 w-screen h-screen md:w-auto">
-            <Image src="/img/software_dev_big-bg.png" alt="Logo" height={600} width={600} /> */}
-
-            {/* <Canvas  camera={{ position: [0, 0, 5], fov: 75 }}>
-            <OrbitControls
-              // autoRotate
-              enableZoom={false}
-              maxPolarAngle={Math.PI / 2}
-              minPolarAngle={Math.PI / 2}
-            />
-            <ambientLight intensity={1} />
-              <Laptop />
-            </Canvas> */}
-          {/* </div> */}
         </div>
       </Section>
   )

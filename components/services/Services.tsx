@@ -69,13 +69,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ index, title, text, icon }) =
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full bg-page-gradient p-[1px] border-primary border-[1px] rounded-[20px] shadow-card'
     >
-      <div className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
+      <div id={`service_${index}`} className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
         <Image src={icon} alt={title} height={110} width={110} />
 
         <h3 className='text-white text-[20px] font-bold text-center'>
           {title}
         </h3>
-        <p className='text-sm' >
+        <p className='text-sm text-primary-text' >
           {text}
         </p>
       </div>
@@ -115,6 +115,7 @@ export const Services = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+      <div id="excite"></div>
     </motion.div>
   );
 };

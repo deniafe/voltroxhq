@@ -30,7 +30,7 @@ export default function HeroText() {
   };
 
   const handleScroll = () => {
-    const section = document.querySelector('#contact-section');
+    const section = document.querySelector('#excite');
 
     section?.scrollIntoView({
       behavior: 'smooth',

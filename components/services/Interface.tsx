@@ -1,6 +1,6 @@
 import { Hero } from './Hero'
 import { Services } from './Services'
-import { Form } from './Form'
+import { Form } from '../global/Form'
 
 export const Interface = () => {
   return (
