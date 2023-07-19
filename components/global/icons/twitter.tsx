@@ -1,7 +1,13 @@
-export const TwitterIcon = () => (
+import React from 'react';
+
+interface TwitterIconProps {
+  size: number; // Size prop representing the width and height of the SVG
+}
+
+export const TwitterIcon: React.FC<TwitterIconProps> = ({ size }) => (
   <svg
-    width="18"
-    height="18"
+    width={size}
+    height={size}
     viewBox="0 0 16 16"
     fill="currentColor"
     role="img"

@@ -53,22 +53,21 @@ export const Footer = () => (
             {/* <Logo className="mr-4 h-4 w-4" /> - Designed worldwide */}
           </div>
           <div className="mt-auto flex space-x-4 pr-12 md:pr-0 text-grey">
-            <a href="https://twitter.com/VoltroxHQ" target="_blank" >
-              <TwitterIcon />
+            <a href="https://twitter.com/VoltroxHQ" target="_blank">
+              <TwitterIcon size={18} />
             </a>
-            <a href="https://facebook.com/voltroxhq" target="_blank" >
-              <FacebookIcon />
+            <a href="https://facebook.com/voltroxhq" target="_blank">
+              <FacebookIcon size={18} />
             </a>
-            <a href="https://www.instagram.com/voltroxhq" target="_blank" >
-              <InstagramIcon />
+            <a href="https://www.instagram.com/voltroxhq" target="_blank">
+              <InstagramIcon size={18} />
             </a>
-            <a href="https://github.com/VoltroxHQ" target="_blank" >
-              <GithubIcon />
+            <a href="https://github.com/VoltroxHQ" target="_blank">
+              <GithubIcon size={18} />
             </a>
-            <a href="https://www.linkedin.com/company/voltroxhq" target="_blank" >
-              <LinkedInIcon />
-            </a>
-            
+            <a href="https://www.linkedin.com/company/voltroxhq" target="_blank">
+              <LinkedInIcon size={18} />
+            </a> 
           </div>
         </div>
       </div>
