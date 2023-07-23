@@ -12,7 +12,7 @@ const footerLinks = [
     title: "Product",
     links: [
       { title: "Services", href: "/services" },
-      { title: "Work with us", href: "/services" },
+      // { title: "Work with us", href: "/services" },
       // { title: "Pricing", href: "#" },
     ],
   },
@@ -20,25 +20,25 @@ const footerLinks = [
     title: "Company",
     links: [
       { title: "About us", href: "/about" },
-      { title: "Blog", href: "#" },
-      { title: "Careers", href: "#" },
+      // { title: "Blog", href: "#" },
+      { title: "Careers", href: "/careers" },
       // { title: "Customers", href: "#" },
-      { title: "Investors", href: "#" },
+      { title: "Investors", href: "/investors" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { title: "Community", href: "#" },
-      { title: "Contact", href: "/services" },
-      { title: "Terms of service", href: "#" },
+      // { title: "Community", href: "#" },
+      { title: "Privacy Policy", href: "/privacy-policy" },
+      { title: "Terms of service", href: "terms-of-service" },
     ],
   },
   {
     title: "Developers",
     links: [
-      { title: "API", href: "#" },
-      { title: "Careers", href: "#" },
+      // { title: "API", href: "#" },
+      { title: "Careers", href: "/careers" },
     ],
   },
 ];
