@@ -82,6 +82,9 @@ export const Info = () => {
            Thank you for your interest in <span className="font-medium">Voltrox HQ, LLC</span>. We truly believe that together, we can achieve 
             remarkable things.  {`We're excited to embark on this journey with passionate investors like you who share 
             our vision for success.`}
+            <p>
+              Feel free to contact us directly using our email, work@voltroxhq.com with <span className="italic" >Investor Inquiry</span> as the subject.
+            </p>
           </div>
         </div>
       </div>

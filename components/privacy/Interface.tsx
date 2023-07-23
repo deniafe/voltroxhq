@@ -285,7 +285,7 @@ const CookiesPolicy = () => {
 
 export const Interface = () => {
   return (
-      <div className="pt-navigation-height max-w-[80rem] mx-[2rem] md:mx-auto mb-[16rem] md:mb-[8rem] mt-[2rem] md:mt-[8rem]">
+      <div className="pt-navigation-height mx-[2rem] md:mx-[12rem] mb-[16rem] md:mb-[8rem] mt-[2rem] md:mt-[8rem]">
         <h2 id="hero-section" className="mb-6 text-4xl md:mb-7 md:text-7xl" >Privacy Policy</h2>
         <PrivacyPolicy />
         <h2 className="mb-6 mt-[4rem] text-4xl md:mb-7 md:mt-[8rem] md:text-7xl">Cookies Policy</h2>

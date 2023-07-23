@@ -44,7 +44,7 @@ export const Interface = () => {
   return (
       <div className="mb-[12rem] md:mb-[1rem] pt-navigation-height"
       >
-        <div className=" max-w-[80rem] mx-[2rem] md:mx-auto mb-[8rem] md:mb-[8rem] mt-[2rem] md:mt-[8rem]">
+        <div className="mx-[2rem] md:mx-[12rem] mb-[8rem] md:mb-[8rem] mt-[2rem] md:mt-[8rem]">
           <h1 id="hero-section" className="mb-6 text-4xl md:mb-7 md:text-7xl">
             Terms of Service for VOLTROX HQ LLC
           </h1>
