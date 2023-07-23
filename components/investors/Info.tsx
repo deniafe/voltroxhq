@@ -64,7 +64,7 @@ export const Info = () => {
           <div className="text-lg text-primary-text px-2 md:px-0 md:block font-md md:text-2xl mb-16 md:mb-20 md:mt-8">
             {`Get ready for a shocking ride into the future of innovation and growth. On our Investor Page, you'll soon find comprehensive information about our company, including`}
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 mb-8 md:mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 mb-8 md:px-[3rem] md:mb-12">
             {contentData.map((content, index) => (
               <div
                 key={index}
