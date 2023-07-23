@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Button } from "./button";
 import { Container } from "./container";
 import { HamburgerIcon } from "./icons/hamburger";
 import Image from 'next/image';
@@ -35,8 +34,7 @@ export const MobileNavBar = () => {
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about' },
     { label: 'Services', href: '/services' },
-    // { label: 'Work With Us', href: '/work' },
-    { label: 'Career', href: '/career' },
+    { label: 'Careers', href: '/careers' },
     { label: 'Investors', href: '/investors' },
   ];
 

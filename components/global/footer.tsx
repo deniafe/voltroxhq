@@ -12,7 +12,7 @@ const footerLinks = [
     title: "Product",
     links: [
       { title: "Services", href: "/services" },
-      { title: "Work with us", href: "/services" },
+      // { title: "Work with us", href: "/services" },
       // { title: "Pricing", href: "#" },
     ],
   },
@@ -20,25 +20,25 @@ const footerLinks = [
     title: "Company",
     links: [
       { title: "About us", href: "/about" },
-      { title: "Blog", href: "#" },
-      { title: "Careers", href: "#" },
+      // { title: "Blog", href: "#" },
+      { title: "Careers", href: "/careers" },
       // { title: "Customers", href: "#" },
-      { title: "Investors", href: "#" },
+      { title: "Investors", href: "/investors" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { title: "Community", href: "#" },
-      { title: "Contact", href: "/services" },
-      { title: "Terms of service", href: "#" },
+      // { title: "Community", href: "#" },
+      { title: "Privacy Policy", href: "/privacy-policy" },
+      { title: "Terms of service", href: "terms-of-service" },
     ],
   },
   {
     title: "Developers",
     links: [
-      { title: "API", href: "#" },
-      { title: "Careers", href: "#" },
+      // { title: "API", href: "#" },
+      { title: "Careers", href: "/careers" },
     ],
   },
 ];
@@ -53,22 +53,21 @@ export const Footer = () => (
             {/* <Logo className="mr-4 h-4 w-4" /> - Designed worldwide */}
           </div>
           <div className="mt-auto flex space-x-4 pr-12 md:pr-0 text-grey">
-            <a href="https://twitter.com/VoltroxHQ" target="_blank" >
-              <TwitterIcon />
+            <a href="https://twitter.com/VoltroxHQ" target="_blank">
+              <TwitterIcon size={18} />
             </a>
-            <a href="https://facebook.com/voltroxhq" target="_blank" >
-              <FacebookIcon />
+            <a href="https://facebook.com/voltroxhq" target="_blank">
+              <FacebookIcon size={18} />
             </a>
-            <a href="https://www.instagram.com/voltroxhq" target="_blank" >
-              <InstagramIcon />
+            <a href="https://www.instagram.com/voltroxhq" target="_blank">
+              <InstagramIcon size={18} />
             </a>
-            <a href="https://github.com/VoltroxHQ" target="_blank" >
-              <GithubIcon />
+            <a href="https://github.com/VoltroxHQ" target="_blank">
+              <GithubIcon size={18} />
             </a>
-            <a href="https://www.linkedin.com/company/voltroxhq" target="_blank" >
-              <LinkedInIcon />
-            </a>
-            
+            <a href="https://www.linkedin.com/company/voltroxhq" target="_blank">
+              <LinkedInIcon size={18} />
+            </a> 
           </div>
         </div>
       </div>
