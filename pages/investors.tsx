@@ -11,7 +11,7 @@ export default function Investors() {
         <title>Voltrox | Investors</title>
         <meta name="description" content="Voltrox" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/icon.jpeg" />
+        <link rel="icon" href="/voltrox.png" />
       </Head>
       <MainLayout>
         <Interface />

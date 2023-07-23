@@ -4,7 +4,7 @@ import React from 'react'
 export default function work() {
   return (
     <MainLayout>
-    <div>work</div>
-  </MainLayout>
+      <div>work</div>
+    </MainLayout>
   )
 }
