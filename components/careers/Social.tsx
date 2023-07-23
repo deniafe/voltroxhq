@@ -54,7 +54,7 @@ export const Social = () => {
           </h2>
           <p className="mx-auto max-w-[80rem] text-lg text-primary-text md:mb-7 md:text-xl">
             {`In the meantime, why not follow us on social media? We post memes, behind-the-scenes shenanigans, 
-            and occasional videos of our team attempting to breakdance. It's pure entertainment, we assure you`}
+            and occasional videos of our team attempting to breakdance. It's pure entertainment, we assure you.`}
           </p>
         </div>
         <div className="mt-auto flex space-x-2 md:space-x-16 justify-center md:pr-0 text-grey ">

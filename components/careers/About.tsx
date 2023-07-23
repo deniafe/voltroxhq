@@ -16,7 +16,7 @@ export const About = () => {
           <p className="mx-auto max-w-[80rem] text-sm text-primary-text md:mb-7 md:text-xl">
           At <span className="font-medium">Voltrox HQ, LLC,</span>{` we believe that work should be both productive and fun. We're a team of passionate 
           individuals who are dedicated to revolutionizing the world with our innovative ideas and impeccable 
-          dance moves`}
+          dance moves.`}
           </p>
         </div>
         <div
