@@ -64,7 +64,7 @@ export const Hero = () => {
 
   return (
     <Section>
-      <div id="hero-section" className=" bg-[#141631] flex pt-navigation-height md:pt-0 flex-col md:flex-row md:justify-center items-center h-screen">
+      <div id="hero-section" className=" flex pt-navigation-height md:pt-0 flex-col md:flex-row md:justify-center items-center h-screen">
        <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1 relative z-10">
           <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">Welcome To Voltrox</h1>
           {/* <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">{ `${navigator.userAgent} : ${isIPhone}` }</h1> */}
@@ -105,10 +105,10 @@ export const Hero = () => {
           </Canvas>
         </div> */}
 
-        <div id="two" className="flex flex-col flex-1 items-center justify-center mt-[16rem] md:mt-[4rem] relative z-0 md:overflow-visible overflow-hidden">
+        <div id="two" className="flex flex-col flex-1 items-center justify-center mt-[16rem] md:mt-[0rem] relative z-0 md:overflow-hidden overflow-hidden">
             {/* <video src="./img/hero.gif" alt="Hero GIF" /> */}
             <video 
-            src="./img/hero_bg.mp4" 
+            src="./img/hero_2.mp4" 
             controls={false} 
             loop
             autoPlay 
@@ -117,7 +117,7 @@ export const Hero = () => {
               width: '100%', // Set the video player width to fit the container
               height: '100%', // Set the video player height to fit the container
               objectFit: 'cover', // Ensure the video content covers the player area
-              transform: `${isMobile ? 'scale(1.2)' :'scale(1.4)'}`, // Apply the scaling transformation for zoom (e.g., 'scale(1.5)' for 150% zoom)
+              transform: `${isMobile ? 'scale(1)' :'scale(1.3)'}`, // Apply the scaling transformation for zoom (e.g., 'scale(1.5)' for 150% zoom)
               transformOrigin: 'center', // Set the transformation origin to the center (optional)
             }}
             >

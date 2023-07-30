@@ -10,10 +10,10 @@ const Interface = () => {
 
   return (
     <div className={``}>
-       <div className={`bg-[#141631]`}>
+       <div className={``}>
          <Hero />
       </div>
-      <div className={`bg-page-linear-gradient mt-[-6rem] pt-[16rem] md:pt-[2rem]`}>
+      {/* <div className={`bg-page-linear-gradient mt-[-6rem] pt-[16rem] md:pt-[2rem]`}> */}
         <Tools />
         <HeroImage />
         <div
@@ -35,7 +35,7 @@ const Interface = () => {
           <Contact />
         </div>
         </div> */}
-       </div>
+       {/* </div> */}
     </div>
   )
 }
