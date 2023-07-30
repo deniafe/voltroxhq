@@ -64,8 +64,8 @@ export const Hero = () => {
 
   return (
     <Section>
-      <div id="hero-section" className="flex pt-navigation-height md:pt-0 flex-col md:mb-[6rem] md:flex-row md:justify-center items-center h-screen">
-       <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1">
+      <div id="hero-section" className=" bg-[#141631] flex pt-navigation-height md:pt-0 flex-col md:flex-row md:justify-center items-center h-screen">
+       <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1 relative z-10">
           <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">Welcome To Voltrox</h1>
           {/* <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">{ `${navigator.userAgent} : ${isIPhone}` }</h1> */}
           <div className="text-3xl md:text-5xl my-8">
@@ -95,7 +95,7 @@ export const Hero = () => {
           
         </div>
           
-        <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto",
+        {/* <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto",
         `${isIPhone ? 'pt-[-14rem] pb-[20rem]' : ''}`,
          `${!isIPhone && isMobile ? 'pt-[4rem]' : ''}`
         )}>
@@ -103,8 +103,27 @@ export const Hero = () => {
             <ambientLight intensity={1} />
               <AquaKeyboard />
           </Canvas>
+        </div> */}
+
+        <div id="two" className="flex flex-col flex-1 items-center justify-center mt-[12rem] md:mt-[4rem] relative z-0">
+            {/* <video src="./img/hero.gif" alt="Hero GIF" /> */}
+            <video 
+            src="./img/hero_bg.mp4" 
+            controls={false} 
+            loop
+            autoPlay 
+            muted
+            style={{
+              width: '100%', // Adjust the width to control the zoom level (e.g., '50%' for 50% zoom)
+              height: 'auto',
+              transform: `${isMobile ? 'scale(1)' :'scale(1.40)'}`, // Additional scaling transformation (e.g., 'scale(0.7)' for 70% zoom)
+            }}
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-      </div>
+
     </Section>
   )
 }

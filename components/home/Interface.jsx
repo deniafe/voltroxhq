@@ -7,12 +7,15 @@ import { Tools } from './Tools'
 import classNames from "classnames"
 
 export const Interface = () => {
+
   return (
-    <div className={`bg-page-gradient`}>
-      <Hero />
-      <Tools />
-      <HeroImage />
-      
+    <div className={``}>
+       <div className={`bg-[#141631]`}>
+         <Hero />
+      </div>
+      <div className={`bg-page-linear-gradient mt-[-6rem] pt-[16rem] md:pt-[2rem]`}>
+        <Tools />
+        <HeroImage />
         <div
           className={classNames(
             "mask-radial-faded pointer-events-none relative z-[-1] my-[-32.8rem] md:mt-[-12.8rem] h-[60rem] overflow-hidden w-screen",
@@ -32,7 +35,7 @@ export const Interface = () => {
           <Contact />
         </div>
         </div> */}
-      
+       </div>
     </div>
   )
 }
