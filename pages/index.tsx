@@ -1,9 +1,11 @@
-import Head from 'next/head'
-import { Suspense, useState } from 'react';
+import Head from 'next/head';
+import React, { Suspense, useState } from 'react';
 
 import { LoadingScreen } from '@/components/home/LoadingScreen';
 import MainLayout from '@/components/global/MainLayout';
-import { Interface } from '@/components/home/Interface';
+
+// Use React.lazy to create a lazy import for Interface
+const LazyInterface = React.lazy(() => import('@/components/home/Interface'));
 
 export default function Home() {
   const [start, setStart] = useState(false);
@@ -16,11 +18,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/voltrox.png" />
       </Head>
-      <Suspense fallback={<LoadingScreen/>}>
+      <Suspense fallback={<LoadingScreen />}>
         <MainLayout>
-          <Interface />
+          {/* Use the lazy component */}
+          <LazyInterface />
         </MainLayout>
       </Suspense>
     </>
-  )
+  );
 }

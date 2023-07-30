@@ -6,7 +6,7 @@ import { EnjoyIssueTracking } from './enjoy-issue-tracking'
 import { Tools } from './Tools'
 import classNames from "classnames"
 
-export const Interface = () => {
+const Interface = () => {
 
   return (
     <div className={``}>
@@ -39,3 +39,5 @@ export const Interface = () => {
     </div>
   )
 }
+
+export default Interface;
