@@ -105,7 +105,7 @@ export const Hero = () => {
           </Canvas>
         </div> */}
 
-        <div id="two" className="flex flex-col flex-1 items-center justify-center mt-[12rem] md:mt-[4rem] relative z-0">
+        <div id="two" className="flex flex-col flex-1 items-center justify-center mt-[12rem] md:mt-[4rem] relative z-0 overflow-hidden ">
             {/* <video src="./img/hero.gif" alt="Hero GIF" /> */}
             <video 
             src="./img/hero_bg.mp4" 
@@ -114,9 +114,11 @@ export const Hero = () => {
             autoPlay 
             muted
             style={{
-              width: '100%', // Adjust the width to control the zoom level (e.g., '50%' for 50% zoom)
-              height: 'auto',
-              transform: `${isMobile ? 'scale(1)' :'scale(1.40)'}`, // Additional scaling transformation (e.g., 'scale(0.7)' for 70% zoom)
+              width: '100%', // Set the video player width to fit the container
+              height: '100%', // Set the video player height to fit the container
+              objectFit: 'cover', // Ensure the video content covers the player area
+              transform: `${isMobile ? 'scale(1.2)' :'scale(1.40)'}`, // Apply the scaling transformation for zoom (e.g., 'scale(1.5)' for 150% zoom)
+              transformOrigin: 'center', // Set the transformation origin to the center (optional)
             }}
             >
               Your browser does not support the video tag.
