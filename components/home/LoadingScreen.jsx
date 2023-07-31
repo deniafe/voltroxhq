@@ -2,7 +2,7 @@ import { useProgress } from "@react-three/drei"
 import { useEffect } from "react"
 import { MutatingDots } from  'react-loader-spinner'
 
-export const LoadingScreen = ({ started, onStarted }) => { 
+export const LoadingScreen = () => { 
   const { progress } = useProgress();
 
   useEffect(() => {

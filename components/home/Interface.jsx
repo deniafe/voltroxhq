@@ -6,13 +6,15 @@ import { EnjoyIssueTracking } from './enjoy-issue-tracking'
 import { Tools } from './Tools'
 import classNames from "classnames"
 
-export const Interface = () => {
+const Interface = () => {
+
   return (
-    <div className={`bg-page-gradient`}>
-      <Hero />
-      <Tools />
-      <HeroImage />
-      
+    <div className={``}>
+       <div className={``}>
+         <Hero />
+      </div>
+        <Tools />
+        <HeroImage />
         <div
           className={classNames(
             "mask-radial-faded pointer-events-none relative z-[-1] my-[-32.8rem] md:mt-[-12.8rem] h-[60rem] overflow-hidden w-screen",
@@ -26,13 +28,8 @@ export const Interface = () => {
       <CodeTyping />
 
       <EnjoyIssueTracking />
-      {/* <div className='relative z-10 w-screen'>
-        <StarsCanvas />
-        <div className="absolute top-1">
-          <Contact />
-        </div>
-        </div> */}
-      
     </div>
   )
 }
+
+export default Interface;

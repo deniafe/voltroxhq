@@ -20,13 +20,6 @@ export const Earth = () => {
 
   return (
     <group style={{ width: '100vw', height: '100vh' }}>
-      {/* <Canvas
-        onCreated={({ gl }) => {
-          gl.setClearColor('#050816');
-        }}
-        camera={{ position: [0, 0, 5], fov: 75 }}
-        style={{ background: '#050816' }}
-      > */}
         <ambientLight color={0xffffff} intensity={0.5} />
         <directionalLight color={0xffffff} intensity={0.5} position={[5, 5, 5]} />
         {/* <OrbitControls /> */}

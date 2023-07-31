@@ -222,6 +222,5 @@ export function AquaKeyboard(props) {
   )
 }
 
-// useGLTF.preload('./models/aqua_keyboard.glb')
 useGLTF.preload('./models/hero_model2.glb')
 useGLTF.preload('./models/screen.glb')

@@ -64,8 +64,8 @@ export const Hero = () => {
 
   return (
     <Section>
-      <div id="hero-section" className="flex pt-navigation-height md:pt-0 flex-col md:mb-[6rem] md:flex-row md:justify-center items-center h-screen">
-       <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1">
+      <div id="hero-section" className=" flex pt-navigation-height md:pt-0 flex-col md:flex-row md:justify-center items-center h-screen">
+       <div id="one" className="hero-text-container text-white text-center flex flex-col justify-center items-center flex-1 relative z-10">
           <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">Welcome To Voltrox</h1>
           {/* <h1 className="text-lg mt-[4rem] md:mt-0 font-medium">{ `${navigator.userAgent} : ${isIPhone}` }</h1> */}
           <div className="text-3xl md:text-5xl my-8">
@@ -95,7 +95,7 @@ export const Hero = () => {
           
         </div>
           
-        <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto",
+        {/* <div className={classNames("flex flex-col flex-1 pl-0 md:pl-0 md:mt-0 md:ml-8 w-screen h-screen md:w-auto",
         `${isIPhone ? 'pt-[-14rem] pb-[20rem]' : ''}`,
          `${!isIPhone && isMobile ? 'pt-[4rem]' : ''}`
         )}>
@@ -103,8 +103,29 @@ export const Hero = () => {
             <ambientLight intensity={1} />
               <AquaKeyboard />
           </Canvas>
+        </div> */}
+
+        <div id="two" className="flex flex-col flex-1 items-center justify-center mt-[10rem] md:pr-[5rem] md:mt-[5rem] relative z-0 md:overflow-visible overflow-hidden">
+            {/* <video src="./img/hero.gif" alt="Hero GIF" /> */}
+            <video 
+            src="./img/hero_2.mp4" 
+            controls={false} 
+            loop={true}
+            autoPlay={true} 
+            muted={true}
+            style={{
+              width: '100%', // Set the video player width to fit the container
+              height: '100%', // Set the video player height to fit the container
+              objectFit: 'cover', // Ensure the video content covers the player area
+              transform: `${isMobile ? 'scale(1)' :'scale(1.2)'}`, // Apply the scaling transformation for zoom (e.g., 'scale(1.5)' for 150% zoom)
+              transformOrigin: 'center', // Set the transformation origin to the center (optional)
+            }}
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-      </div>
+
     </Section>
   )
 }

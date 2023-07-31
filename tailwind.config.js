@@ -70,6 +70,8 @@ module.exports = {
         "linear-gradient(92.88deg, rgb(87, 221, 200) 64.72%, rgba(84, 203, 184) 43.89%, rgb(87, 221, 200) 9.16%)",
       "page-gradient":
         "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), transparent)",
+        "page-linear-gradient" :
+        "linear-gradient(to bottom, rgba(20, 22, 49, 1) 1%, transparent 99%)",
       "contact-gradient":
         "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), 100%)",
       "hero-gradient":

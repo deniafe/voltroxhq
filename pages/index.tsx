@@ -1,12 +1,11 @@
-import Head from 'next/head'
-import { Suspense, useState } from 'react';
+import Head from 'next/head';
+import React, { Suspense } from 'react';
 
 import { LoadingScreen } from '@/components/home/LoadingScreen';
 import MainLayout from '@/components/global/MainLayout';
-import { Interface } from '@/components/home/Interface';
+import Interface from '@/components/home/Interface'
 
 export default function Home() {
-  const [start, setStart] = useState(false);
 
   return (
     <>
@@ -16,17 +15,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/voltrox.png" />
       </Head>
-      <Suspense fallback={<LoadingScreen started={start} onStarted={() => setStart(true)} />}>{start ? 
-        (
-          <MainLayout>
-            <Interface />
-          </MainLayout>
-        ) : (
-          <>
-            <LoadingScreen started={start} onStarted={() => setStart(true)} />
-        </>
-        )
-      }</Suspense>
+      <Suspense fallback={<LoadingScreen />}>
+        <MainLayout>
+          <Interface />
+        </MainLayout>
+      </Suspense>
     </>
-  )
+  );
 }
