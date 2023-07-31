@@ -85,7 +85,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ index, title, text, icon }) =
 
 export const Services = () => {
   return (
-    <motion.div className="pt-[1rem] mb-[12rem] md:mt-[16rem] md:mb-[16rem]"
+    <motion.div className="pt-[1rem] mb-[12rem] md:mt-[6rem] md:mb-[16rem]"
       initial={{
         opacity: 0,
         y: 50,

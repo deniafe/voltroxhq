@@ -13,7 +13,6 @@ const Interface = () => {
        <div className={``}>
          <Hero />
       </div>
-      {/* <div className={`bg-page-linear-gradient mt-[-6rem] pt-[16rem] md:pt-[2rem]`}> */}
         <Tools />
         <HeroImage />
         <div
@@ -29,13 +28,6 @@ const Interface = () => {
       <CodeTyping />
 
       <EnjoyIssueTracking />
-      {/* <div className='relative z-10 w-screen'>
-        <StarsCanvas />
-        <div className="absolute top-1">
-          <Contact />
-        </div>
-        </div> */}
-       {/* </div> */}
     </div>
   )
 }

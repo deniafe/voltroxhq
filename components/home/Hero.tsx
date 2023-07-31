@@ -105,7 +105,7 @@ export const Hero = () => {
           </Canvas>
         </div> */}
 
-        <div id="two" className="flex flex-col flex-1 items-center justify-center mt-[16rem] md:mt-[0rem] relative z-0 md:overflow-hidden overflow-hidden">
+        <div id="two" className="flex flex-col flex-1 items-center justify-center mt-[10rem] md:pr-[5rem] md:mt-[5rem] relative z-0 md:overflow-visible overflow-hidden">
             {/* <video src="./img/hero.gif" alt="Hero GIF" /> */}
             <video 
             src="./img/hero_2.mp4" 
@@ -117,7 +117,7 @@ export const Hero = () => {
               width: '100%', // Set the video player width to fit the container
               height: '100%', // Set the video player height to fit the container
               objectFit: 'cover', // Ensure the video content covers the player area
-              transform: `${isMobile ? 'scale(1)' :'scale(1.3)'}`, // Apply the scaling transformation for zoom (e.g., 'scale(1.5)' for 150% zoom)
+              transform: `${isMobile ? 'scale(1)' :'scale(1.2)'}`, // Apply the scaling transformation for zoom (e.g., 'scale(1.5)' for 150% zoom)
               transformOrigin: 'center', // Set the transformation origin to the center (optional)
             }}
             >

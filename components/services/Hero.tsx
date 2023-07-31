@@ -16,7 +16,7 @@ export function Hero() {
   }, []);
   return (
       <Section>
-        <div id="hero-section" className="grid grid-cols-1 md:grid-cols-2 pt-navigation-height mb-[16rem]  md:pt-0  md:mb-[16rem] px-[4rem] mt-[8rem]">
+        <div id="hero-section" className="grid grid-cols-1 md:grid-cols-2 pt-navigation-height mb-[16rem]  md:pt-0  md:mb-[8rem] px-[4rem] mt-[8rem]">
           <div>
             <HeroText />
           </div>
