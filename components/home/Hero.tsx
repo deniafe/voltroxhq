@@ -110,9 +110,9 @@ export const Hero = () => {
             <video 
             src="./img/hero_2.mp4" 
             controls={false} 
-            loop
-            autoPlay 
-            muted
+            loop={true}
+            autoPlay={true} 
+            muted={true}
             style={{
               width: '100%', // Set the video player width to fit the container
               height: '100%', // Set the video player height to fit the container
