@@ -108,7 +108,7 @@ export const Hero = () => {
         <div id="two" className="flex flex-col flex-1 items-center justify-center mt-[10rem] md:pr-[5rem] md:mt-[5rem] relative z-0 md:overflow-visible overflow-hidden">
             {/* <video src="./img/hero.gif" alt="Hero GIF" /> */}
             <video 
-            src="./img/hero_2.mp4" 
+            src={`${isIPhone ? "./img/hero_2.gif" : "./img/hero_2.mp4" }`}
             controls={false} 
             loop={true}
             autoPlay={true} 
