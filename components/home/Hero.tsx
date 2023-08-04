@@ -106,34 +106,36 @@ export const Hero = () => {
         </div> */}
 
         <div id="two" className="flex flex-col flex-1 items-center justify-center mt-[10rem] md:pr-[5rem] md:mt-[5rem] relative z-0 md:overflow-visible overflow-hidden">
-        <img
-          src={isIPhone ? "./img/hero_2.gif" : "./img/hero_2.gif"}
-          alt="Hero Image"
-          style={{
-            width: '100%', // Set the image width to fit the container
-            height: '100%', // Set the image height to fit the container
-            objectFit: 'cover', // Ensure the image content covers the container area
-            transform: isMobile ? 'scale(1)' : 'scale(1.2)', // Apply the scaling transformation for zoom (e.g., 'scale(1.5)' for 150% zoom)
-            transformOrigin: 'center', // Set the transformation origin to the center (optional)
-          }}
-        />
-
-            {/* <video 
-              src={`${isIPhone ? "./img/hero_2.gif" : "./img/hero_2.gif" }`}
-              controls={false} 
-              loop={true}
-              autoPlay={true} 
-              muted={true}
-              style={{
-                width: '100%', // Set the video player width to fit the container
-                height: '100%', // Set the video player height to fit the container
-                objectFit: 'cover', // Ensure the video content covers the player area
-                transform: `${isMobile ? 'scale(1)' :'scale(1.2)'}`, // Apply the scaling transformation for zoom (e.g., 'scale(1.5)' for 150% zoom)
-                transformOrigin: 'center', // Set the transformation origin to the center (optional)
-              }}
-            >
-              Your browser does not support the video tag.
-            </video> */}
+          {isMobile ? (
+              <img
+                src="./img/hero_2.gif"
+                alt="Hero Image"
+                style={{
+                  width: '100%', // Set the image width to fit the container
+                  height: '100%', // Set the image height to fit the container
+                  objectFit: 'cover', // Ensure the image content covers the container area
+                  transform: 'scale(1)', // Apply the scaling transformation for zoom (e.g., 'scale(1.5)' for 150% zoom)
+                  transformOrigin: 'center', // Set the transformation origin to the center (optional)
+                }}
+              />
+            ) : (
+              <video
+                src="./img/hero_2.mp4"
+                controls={false}
+                loop={true}
+                autoPlay={true}
+                muted={true}
+                style={{
+                  width: '100%', // Set the video player width to fit the container
+                  height: '100%', // Set the video player height to fit the container
+                  objectFit: 'cover', // Ensure the video content covers the player area
+                  transform: 'scale(1.2)', // Apply the scaling transformation for zoom (e.g., 'scale(1.5)' for 150% zoom)
+                  transformOrigin: 'center', // Set the transformation origin to the center (optional)
+                }}
+              >
+                Your browser does not support the video tag.
+              </video>
+            )}
           </div>
         </div>
     </Section>
