@@ -34,13 +34,13 @@ const footerLinks = [
       { title: "Terms of service", href: "terms-of-service" },
     ],
   },
-  {
-    title: "Developers",
-    links: [
-      // { title: "API", href: "#" },
-      { title: "Careers", href: "/careers" },
-    ],
-  },
+  // {
+  //   title: "Developers",
+  //   links: [
+  //     // { title: "API", href: "#" },
+  //     { title: "Careers", href: "/careers" },
+  //   ],
+  // },
 ];
 
 export const Footer = () => (
